@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "301E28355F850CD4B85EB4F79970100B"
+               BlueprintIdentifier = "60F9C2E8E0BC42DCC1B0B1B92845CE44"
                BuildableName = "libPods-BentoBear.a"
                BlueprintName = "Pods-BentoBear"
                ReferencedContainer = "container:Pods.xcodeproj">

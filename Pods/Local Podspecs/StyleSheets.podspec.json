@@ -1,0 +1,23 @@
+{
+  "name": "StyleSheets",
+  "version": "0.3",
+  "summary": "StyleSheets for your UIViews 💅",
+  "description": "Provides a declarative way to define styles for your UIViews",
+  "homepage": "https://github.com/Babylonpartners/Bento",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Babylon iOS": "ios.development@babylonhealth.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/Babylonpartners/Bento.git",
+    "branch": "master"
+  },
+  "swift_version": "4.2",
+  "source_files": "StyleSheets/StyleSheets/*.swift"
+}

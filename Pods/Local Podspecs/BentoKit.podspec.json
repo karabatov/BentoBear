@@ -1,0 +1,41 @@
+{
+  "name": "BentoKit",
+  "version": "0.3",
+  "summary": "Common components and toolbox for building component based interfaces. Built on top of Bento.",
+  "description": "Common components and toolbox for building component based interfaces. Built on top of Bento.",
+  "homepage": "https://github.com/Babylonpartners/Bento",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Babylon iOS": "ios.development@babylonhealth.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/Babylonpartners/Bento.git",
+    "branch": "master"
+  },
+  "source_files": "BentoKit/BentoKit/**/*.swift",
+  "resource_bundles": {
+    "BentoKit": "BentoKit/BentoKit/Resources/Media.xcassets"
+  },
+  "exclude_files": "BentoKit/BentoKit/Components.playground/**/*",
+  "swift_version": "4.2",
+  "dependencies": {
+    "Bento": [
+
+    ],
+    "StyleSheets": [
+
+    ],
+    "ReactiveSwift": [
+      "~> 4.0.0"
+    ],
+    "ReactiveCocoa": [
+      "~> 8.0.2"
+    ]
+  }
+}

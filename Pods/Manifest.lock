@@ -1,20 +1,31 @@
 PODS:
   - Bento (0.3):
     - FlexibleDiff (= 0.0.7)
+  - BentoKit (0.3):
+    - Bento
+    - ReactiveCocoa (~> 8.0.2)
+    - ReactiveSwift (~> 4.0.0)
+    - StyleSheets
   - FlexibleDiff (0.0.7)
+  - ReactiveCocoa (8.0.2):
+    - ReactiveSwift (~> 4.0)
   - ReactiveFeedback (0.4.1):
     - ReactiveSwift (~> 4.0)
   - ReactiveSwift (4.0.0):
     - Result (~> 4.0)
   - Result (4.1.0)
+  - StyleSheets (0.3)
 
 DEPENDENCIES:
   - "Bento (from `git@github.com:Babylonpartners/Bento.git`)"
+  - "BentoKit (from `git@github.com:Babylonpartners/Bento.git`)"
   - ReactiveFeedback
+  - "StyleSheets (from `git@github.com:Babylonpartners/Bento.git`)"
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FlexibleDiff
+    - ReactiveCocoa
     - ReactiveFeedback
     - ReactiveSwift
     - Result
@@ -22,19 +33,32 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Bento:
     :git: "git@github.com:Babylonpartners/Bento.git"
+  BentoKit:
+    :git: "git@github.com:Babylonpartners/Bento.git"
+  StyleSheets:
+    :git: "git@github.com:Babylonpartners/Bento.git"
 
 CHECKOUT OPTIONS:
   Bento:
     :commit: 80aeb3007f453500cf75d4079c53dea690891e41
     :git: "git@github.com:Babylonpartners/Bento.git"
+  BentoKit:
+    :commit: 80aeb3007f453500cf75d4079c53dea690891e41
+    :git: "git@github.com:Babylonpartners/Bento.git"
+  StyleSheets:
+    :commit: 80aeb3007f453500cf75d4079c53dea690891e41
+    :git: "git@github.com:Babylonpartners/Bento.git"
 
 SPEC CHECKSUMS:
   Bento: 0e214943724886608393d4ebcccb0e720eaa073b
+  BentoKit: c1907158e740e3184256c26c94073b45158c1270
   FlexibleDiff: 9449f18d480e07b0d6599838c973f088df8e5d33
+  ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
   ReactiveFeedback: d26dc761c02d49644d4d79731e29a75faaabdce1
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  StyleSheets: cb35ec6073f95ad4b6ede668f5ba33099bfb3fda
 
-PODFILE CHECKSUM: edc3259eb85e6815ee4f25250c326c75f51c7bf6
+PODFILE CHECKSUM: a6576107abf9e126e22a231685467633898b82c4
 
 COCOAPODS: 1.6.1
