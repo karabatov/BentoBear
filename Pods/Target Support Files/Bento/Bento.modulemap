@@ -1,0 +1,6 @@
+module Bento {
+  umbrella header "Bento-umbrella.h"
+
+  export *
+  module * { export * }
+}

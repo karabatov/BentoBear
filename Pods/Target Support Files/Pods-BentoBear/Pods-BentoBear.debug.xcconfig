@@ -1,0 +1,11 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Bento" "${PODS_CONFIGURATION_BUILD_DIR}/FlexibleDiff" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveFeedback" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift" "${PODS_CONFIGURATION_BUILD_DIR}/Result"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Bento/Bento.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/FlexibleDiff/FlexibleDiff.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/ReactiveFeedback/ReactiveFeedback.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift/ReactiveSwift.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Result/Result.modulemap"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Bento" -l"FlexibleDiff" -l"ReactiveFeedback" -l"ReactiveSwift" -l"Result"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Bento/Bento.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/FlexibleDiff/FlexibleDiff.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/ReactiveFeedback/ReactiveFeedback.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift/ReactiveSwift.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Result/Result.modulemap"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Bento" "${PODS_CONFIGURATION_BUILD_DIR}/FlexibleDiff" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveFeedback" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift" "${PODS_CONFIGURATION_BUILD_DIR}/Result"

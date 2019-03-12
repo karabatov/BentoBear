@@ -1,0 +1,40 @@
+PODS:
+  - Bento (0.3):
+    - FlexibleDiff (= 0.0.7)
+  - FlexibleDiff (0.0.7)
+  - ReactiveFeedback (0.4.1):
+    - ReactiveSwift (~> 4.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.1.0)
+
+DEPENDENCIES:
+  - "Bento (from `git@github.com:Babylonpartners/Bento.git`)"
+  - ReactiveFeedback
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FlexibleDiff
+    - ReactiveFeedback
+    - ReactiveSwift
+    - Result
+
+EXTERNAL SOURCES:
+  Bento:
+    :git: "git@github.com:Babylonpartners/Bento.git"
+
+CHECKOUT OPTIONS:
+  Bento:
+    :commit: 80aeb3007f453500cf75d4079c53dea690891e41
+    :git: "git@github.com:Babylonpartners/Bento.git"
+
+SPEC CHECKSUMS:
+  Bento: 0e214943724886608393d4ebcccb0e720eaa073b
+  FlexibleDiff: 9449f18d480e07b0d6599838c973f088df8e5d33
+  ReactiveFeedback: d26dc761c02d49644d4d79731e29a75faaabdce1
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+
+PODFILE CHECKSUM: edc3259eb85e6815ee4f25250c326c75f51c7bf6
+
+COCOAPODS: 1.6.1

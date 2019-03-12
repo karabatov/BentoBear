@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50DD68A13C028C4C97852B91 /* libPods-BentoBear.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 494D993CEB0F6DBAEEB44B56 /* libPods-BentoBear.a */; };
 		D1FF79C72238008D00DEF677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FF79C62238008D00DEF677 /* AppDelegate.swift */; };
 		D1FF79C92238008D00DEF677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FF79C82238008D00DEF677 /* ViewController.swift */; };
 		D1FF79CC2238008D00DEF677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FF79CA2238008D00DEF677 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		494D993CEB0F6DBAEEB44B56 /* libPods-BentoBear.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BentoBear.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38A7FF987A531CE3F72E05B /* Pods-BentoBear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BentoBear.debug.xcconfig"; path = "Target Support Files/Pods-BentoBear/Pods-BentoBear.debug.xcconfig"; sourceTree = "<group>"; };
 		D1FF79C32238008D00DEF677 /* BentoBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BentoBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FF79C62238008D00DEF677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1FF79C82238008D00DEF677 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D1FF79CD2238009000DEF677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1FF79D02238009000DEF677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1FF79D22238009000DEF677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D335D9249502A19CAA646A /* Pods-BentoBear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BentoBear.release.xcconfig"; path = "Target Support Files/Pods-BentoBear/Pods-BentoBear.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DD68A13C028C4C97852B91 /* libPods-BentoBear.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		418A338D848FBBE95825009F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B38A7FF987A531CE3F72E05B /* Pods-BentoBear.debug.xcconfig */,
+				E8D335D9249502A19CAA646A /* Pods-BentoBear.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5ADD3E2AD86C6DA0FCD1CC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				494D993CEB0F6DBAEEB44B56 /* libPods-BentoBear.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1FF79BA2238008D00DEF677 = {
 			isa = PBXGroup;
 			children = (
 				D1FF79C52238008D00DEF677 /* BentoBear */,
 				D1FF79C42238008D00DEF677 /* Products */,
+				418A338D848FBBE95825009F /* Pods */,
+				A5ADD3E2AD86C6DA0FCD1CC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1FF79D52238009000DEF677 /* Build configuration list for PBXNativeTarget "BentoBear" */;
 			buildPhases = (
+				5C455302C9385C2A3DFEAB39 /* [CP] Check Pods Manifest.lock */,
 				D1FF79BF2238008D00DEF677 /* Sources */,
 				D1FF79C02238008D00DEF677 /* Frameworks */,
 				D1FF79C12238008D00DEF677 /* Resources */,
@@ -129,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C455302C9385C2A3DFEAB39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BentoBear-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1FF79BF2238008D00DEF677 /* Sources */ = {
@@ -213,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,6 +330,7 @@
 		};
 		D1FF79D62238009000DEF677 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38A7FF987A531CE3F72E05B /* Pods-BentoBear.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +349,7 @@
 		};
 		D1FF79D72238009000DEF677 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D335D9249502A19CAA646A /* Pods-BentoBear.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
