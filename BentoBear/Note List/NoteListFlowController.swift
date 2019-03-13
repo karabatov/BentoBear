@@ -6,11 +6,16 @@
 //  Copyright © 2019 Yuri Karabatov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol Flow {
     func present()
     func dismiss()
+}
+
+struct SampleFlow: Flow {
+    func present() {}
+    func dismiss() {}
 }
 
 final class NoteListFlowController {
