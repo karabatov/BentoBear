@@ -8,16 +8,6 @@
 
 import UIKit
 
-protocol Flow {
-    func present()
-    func dismiss()
-}
-
-struct SampleFlow: Flow {
-    func present() {}
-    func dismiss() {}
-}
-
 final class NoteListFlowController {
     private let presentationFlow: Flow
     private let presenting: Flow
@@ -30,7 +20,7 @@ final class NoteListFlowController {
     func handle(_ route: NoteListViewModel.Route) {
         switch route {
         case .showNote:
-            presenting.dismiss()
+            presenting.dismiss(true)
         }
     }
 }

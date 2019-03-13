@@ -12,11 +12,7 @@ import BentoKit
 import Result
 
 struct NoteListBuilder {
-    func make(
-        context: NoteListRendererContext,
-        presentationFlow: Flow,
-        presenting: Flow
-    ) -> UIViewController {
+    func make(context: NoteListRendererContext) -> UIViewController {
         let viewModel = NoteListViewModel()
 
         let viewController = BoxViewController.init(
@@ -29,8 +25,8 @@ struct NoteListBuilder {
         )
 
         let flowController = NoteListFlowController(
-            presentationFlow: presentationFlow,
-            presenting: presenting
+            presentationFlow: viewController.navigationFlow,
+            presenting: viewController.navigationFlow
         )
 
         viewModel.routes
