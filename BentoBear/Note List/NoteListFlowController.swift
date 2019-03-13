@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+protocol Flow {
+    func present()
+    func dismiss()
+}
+
+final class NoteListFlowController {
+    private let presentationFlow: Flow
+    private let presenting: Flow
+
+    init(presentationFlow: Flow, presenting: Flow) {
+        self.presentationFlow = presentationFlow
+        self.presenting = presenting
+    }
+
+    func handle(_ route: NoteListViewModel.Route) {
+        switch route {
+        case .showNote:
+            presenting.dismiss()
+        }
+    }
+}
