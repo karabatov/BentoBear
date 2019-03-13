@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		50DD68A13C028C4C97852B91 /* libPods-BentoBear.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 494D993CEB0F6DBAEEB44B56 /* libPods-BentoBear.a */; };
+		D1CC421822396AA50062DED7 /* NoteListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421722396AA50062DED7 /* NoteListBuilder.swift */; };
+		D1CC421A22396AC80062DED7 /* NoteListFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421922396AC80062DED7 /* NoteListFlowController.swift */; };
+		D1CC421C22396AD90062DED7 /* NoteListRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421B22396AD90062DED7 /* NoteListRenderer.swift */; };
+		D1CC421E22396AEF0062DED7 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421D22396AEF0062DED7 /* NoteListViewModel.swift */; };
 		D1FF79C72238008D00DEF677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FF79C62238008D00DEF677 /* AppDelegate.swift */; };
 		D1FF79C92238008D00DEF677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FF79C82238008D00DEF677 /* ViewController.swift */; };
 		D1FF79CC2238008D00DEF677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FF79CA2238008D00DEF677 /* Main.storyboard */; };
@@ -18,6 +22,10 @@
 /* Begin PBXFileReference section */
 		494D993CEB0F6DBAEEB44B56 /* libPods-BentoBear.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BentoBear.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38A7FF987A531CE3F72E05B /* Pods-BentoBear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BentoBear.debug.xcconfig"; path = "Target Support Files/Pods-BentoBear/Pods-BentoBear.debug.xcconfig"; sourceTree = "<group>"; };
+		D1CC421722396AA50062DED7 /* NoteListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListBuilder.swift; sourceTree = "<group>"; };
+		D1CC421922396AC80062DED7 /* NoteListFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListFlowController.swift; sourceTree = "<group>"; };
+		D1CC421B22396AD90062DED7 /* NoteListRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListRenderer.swift; sourceTree = "<group>"; };
+		D1CC421D22396AEF0062DED7 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
 		D1FF79C32238008D00DEF677 /* BentoBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BentoBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FF79C62238008D00DEF677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1FF79C82238008D00DEF677 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +65,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D1CC4216223969540062DED7 /* Note List */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC421722396AA50062DED7 /* NoteListBuilder.swift */,
+				D1CC421922396AC80062DED7 /* NoteListFlowController.swift */,
+				D1CC421B22396AD90062DED7 /* NoteListRenderer.swift */,
+				D1CC421D22396AEF0062DED7 /* NoteListViewModel.swift */,
+			);
+			path = "Note List";
+			sourceTree = "<group>";
+		};
 		D1FF79BA2238008D00DEF677 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +99,7 @@
 			children = (
 				D1FF79C62238008D00DEF677 /* AppDelegate.swift */,
 				D1FF79C82238008D00DEF677 /* ViewController.swift */,
+				D1CC4216223969540062DED7 /* Note List */,
 				D1FF79CA2238008D00DEF677 /* Main.storyboard */,
 				D1FF79CD2238009000DEF677 /* Assets.xcassets */,
 				D1FF79CF2238009000DEF677 /* LaunchScreen.storyboard */,
@@ -209,7 +229,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1FF79C92238008D00DEF677 /* ViewController.swift in Sources */,
+				D1CC421C22396AD90062DED7 /* NoteListRenderer.swift in Sources */,
+				D1CC421E22396AEF0062DED7 /* NoteListViewModel.swift in Sources */,
+				D1CC421A22396AC80062DED7 /* NoteListFlowController.swift in Sources */,
 				D1FF79C72238008D00DEF677 /* AppDelegate.swift in Sources */,
+				D1CC421822396AA50062DED7 /* NoteListBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
