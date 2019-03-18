@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ReactiveSwift
 
 typealias PostID = Int
 

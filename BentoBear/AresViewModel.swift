@@ -70,21 +70,20 @@ extension AresViewModel {
     }
 }
 
-/*
 class WarBoxViewModel<AA: Equatable, RR, EE: Equatable, SS: StateType>: AresViewModel {
     typealias A = AA
     typealias R = RR
     typealias E = EE
     typealias S = SS
 
-    let state = WarBoxViewModel.initState()
+    let state: Property<SS>
     let routes: Signal<RR, NoError>
     let actions: Signal<AA, NoError>
     let actionsObserver: Signal<AA, NoError>.Observer
 
     init() {
+        state = WarBoxViewModel.initState()
         routes = WarBoxViewModel.initRoutes(state: state)
         (actions, actionsObserver) = WarBoxViewModel.initActionsObserver()
     }
 }
- */
