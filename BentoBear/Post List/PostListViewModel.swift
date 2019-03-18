@@ -8,9 +8,11 @@
 
 import Foundation
 import BentoKit
+import ReactiveSwift
+import ReactiveFeedback
+import Result
 
-final class PostListViewModel {
-
+final class PostListViewModel {// : WarBoxViewModel<PostListViewModel.Action, PostListViewModel.Route, PostListViewModel.Event, PostListViewModel.State> {
 }
 
 extension PostListViewModel {
