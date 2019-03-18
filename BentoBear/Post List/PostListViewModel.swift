@@ -33,13 +33,64 @@ final class PostListViewModel: BoxViewModel {
     }
 
     private static func reduce(_ state: State, _ event: Event) -> State {
-        return state
+        switch (state.posts, state.loading, event) {
+        // Initial state, posts have been loaded (from disk).
+        case (.empty, .idle, .loadedPosts(let posts)):
+            return State(posts: .showing(posts), loading: .idle)
+
+        // We have signaled to start downloading, no matter if we have posts or not.
+        case (let posts, .idle, .startDownloadingPosts):
+            return State(posts: posts, loading: .loading)
+
+        // Switch to idle and display posts or empty state when post loading is finished.
+        case (_, .loading, .loadedPosts(let posts)):
+            let postState: PostsState
+            if posts.isEmpty {
+                postState = .empty
+            } else {
+                postState = .showing(posts)
+            }
+            return State(posts: postState, loading: .idle)
+
+        default:
+            return state
+        }
     }
 
     private static func makeRoute(_ state: State) -> Route? {
         return nil
     }
 }
+
+// MARK: Feedbacks
+
+extension PostListViewModel {
+    /// Initial state: nothing is loaded from disk or network.
+    static func whenEmptyIdle(store: PostStore) -> Feedback<State, Event> {
+        return Feedback { state -> SignalProducer<Event, NoError> in
+            guard state.posts == .empty && state.loading == .idle else { return .empty }
+
+            let posts = store.loadAllOnDevice()
+            if posts.isEmpty {
+                return .init(value: .startDownloadingPosts)
+            } else {
+                return .init(value: .loadedPosts(posts))
+            }
+        }
+    }
+
+    /// Download posts, both from UI and programmatically.
+    static func whenStartDownloading(downloader: PostDownloader) -> Feedback<State, Event> {
+        return Feedback { state -> SignalProducer<Event, NoError> in
+            guard state.loading == .loading else { return .empty }
+
+            let posts = downloader.downloadPosts(overwriteExisting: true)
+            return .init(value: .loadedPosts(posts))
+        }
+    }
+}
+
+// MARK: State machine
 
 extension PostListViewModel {
     enum PostsState: Equatable {
@@ -60,6 +111,8 @@ extension PostListViewModel {
 
     enum Event: Equatable {
         case ui(Action)
+        case loadedPosts([Post])
+        case startDownloadingPosts
     }
 
     enum Action: Equatable {

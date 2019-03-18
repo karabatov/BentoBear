@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		50DD68A13C028C4C97852B91 /* libPods-BentoBear.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 494D993CEB0F6DBAEEB44B56 /* libPods-BentoBear.a */; };
 		D18276962240154A008C2A34 /* AresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18276952240154A008C2A34 /* AresViewModel.swift */; };
+		D18276982240441C008C2A34 /* PostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18276972240441C008C2A34 /* PostStore.swift */; };
+		D182769A22404C5C008C2A34 /* PostDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D182769922404C5C008C2A34 /* PostDownloader.swift */; };
 		D1CC421822396AA50062DED7 /* NoteListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421722396AA50062DED7 /* NoteListBuilder.swift */; };
 		D1CC421A22396AC80062DED7 /* NoteListFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421922396AC80062DED7 /* NoteListFlowController.swift */; };
 		D1CC421C22396AD90062DED7 /* NoteListRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421B22396AD90062DED7 /* NoteListRenderer.swift */; };
@@ -25,6 +27,8 @@
 		494D993CEB0F6DBAEEB44B56 /* libPods-BentoBear.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BentoBear.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38A7FF987A531CE3F72E05B /* Pods-BentoBear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BentoBear.debug.xcconfig"; path = "Target Support Files/Pods-BentoBear/Pods-BentoBear.debug.xcconfig"; sourceTree = "<group>"; };
 		D18276952240154A008C2A34 /* AresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AresViewModel.swift; sourceTree = "<group>"; };
+		D18276972240441C008C2A34 /* PostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStore.swift; sourceTree = "<group>"; };
+		D182769922404C5C008C2A34 /* PostDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDownloader.swift; sourceTree = "<group>"; };
 		D1CC421722396AA50062DED7 /* NoteListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListBuilder.swift; sourceTree = "<group>"; };
 		D1CC421922396AC80062DED7 /* NoteListFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListFlowController.swift; sourceTree = "<group>"; };
 		D1CC421B22396AD90062DED7 /* NoteListRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListRenderer.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				D1E0ABE5223FF73F00AC5A93 /* Post.swift */,
+				D18276972240441C008C2A34 /* PostStore.swift */,
+				D182769922404C5C008C2A34 /* PostDownloader.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +258,8 @@
 				D1E0ABE3223FF0A000AC5A93 /* PostListViewModel.swift in Sources */,
 				D1CC421C22396AD90062DED7 /* NoteListRenderer.swift in Sources */,
 				D1CC421E22396AEF0062DED7 /* NoteListViewModel.swift in Sources */,
+				D18276982240441C008C2A34 /* PostStore.swift in Sources */,
+				D182769A22404C5C008C2A34 /* PostDownloader.swift in Sources */,
 				D1E0ABE6223FF73F00AC5A93 /* Post.swift in Sources */,
 				D1CC421A22396AC80062DED7 /* NoteListFlowController.swift in Sources */,
 				D1CC42202239903E0062DED7 /* Flow.swift in Sources */,
