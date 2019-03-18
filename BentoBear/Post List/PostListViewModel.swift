@@ -12,6 +12,7 @@ import ReactiveSwift
 import ReactiveFeedback
 import Result
 
+/// Display a list of posts.
 final class PostListViewModel: BoxViewModel {
     let state: Property<State>
     let routes: Signal<Route, NoError>
