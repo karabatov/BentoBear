@@ -6,6 +6,8 @@
 //  Copyright © 2019 Yuri Karabatov. All rights reserved.
 //
 
+/*
+
 import Foundation
 import BentoKit
 import ReactiveSwift
@@ -87,3 +89,11 @@ class WarBoxViewModel<AA: Equatable, RR, EE: Equatable, SS: StateType>: AresView
         (actions, actionsObserver) = WarBoxViewModel.initActionsObserver()
     }
 }
+
+final class ViewModel: WarBoxViewModel<ConcreteAction, ConcreteRoute, ConcreteEvent, ConcreteState> {
+    override init() {
+        super.init()
+    }
+}
+
+*/

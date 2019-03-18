@@ -12,40 +12,61 @@ import ReactiveSwift
 import ReactiveFeedback
 import Result
 
-enum PLVMPostsState: Equatable {
-    case empty
-    case showing([Post])
-}
+final class PostListViewModel: BoxViewModel {
+    let state: Property<State>
+    let routes: Signal<Route, NoError>
 
-enum PLVMLoadingState: Equatable {
-    case idle
-    case loading
-    case error(String)
-}
+    private let (actions, actionsObserver) = Signal<Action, NoError>.pipe()
 
-struct PLVMState: StateType {
-    let posts: PLVMPostsState
-    let loading: PLVMLoadingState
+    init() {
+        state = Property(
+            initial: .init(posts: .empty, loading: .idle),
+            reduce: PostListViewModel.reduce,
+            feedbacks: []
+        )
 
-    static func initial() -> PLVMState {
-        return PLVMState(posts: .empty, loading: .idle)
+        routes = state.signal.skipRepeats().filterMap(PostListViewModel.makeRoute)
+    }
+
+    func send(action: Action) {
+        actionsObserver.send(value: action)
+    }
+
+    private static func reduce(_ state: State, _ event: Event) -> State {
+        return state
+    }
+
+    private static func makeRoute(_ state: State) -> Route? {
+        return nil
     }
 }
 
-enum PLVMEvent: Equatable {
-    case ui(PLVMAction)
-}
+extension PostListViewModel {
+    enum PostsState: Equatable {
+        case empty
+        case showing([Post])
+    }
 
-enum PLVMAction: Equatable {
-    case selectedPost(index: Int)
-}
+    enum LoadingState: Equatable {
+        case idle
+        case loading
+        case error(String)
+    }
 
-enum PLVMRoute {
-    case showPost
-}
+    struct State: Equatable {
+        let posts: PostsState
+        let loading: LoadingState
+    }
 
-final class PostListViewModel: WarBoxViewModel<PLVMAction, PLVMRoute, PLVMEvent, PLVMState> {
-    override init() {
-        super.init()
+    enum Event: Equatable {
+        case ui(Action)
+    }
+
+    enum Action: Equatable {
+        case selectedPost(index: Int)
+    }
+
+    enum Route {
+        case showPost
     }
 }
