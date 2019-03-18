@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50DD68A13C028C4C97852B91 /* libPods-BentoBear.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 494D993CEB0F6DBAEEB44B56 /* libPods-BentoBear.a */; };
+		D18276962240154A008C2A34 /* WarBoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18276952240154A008C2A34 /* WarBoxViewModel.swift */; };
 		D1CC421822396AA50062DED7 /* NoteListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421722396AA50062DED7 /* NoteListBuilder.swift */; };
 		D1CC421A22396AC80062DED7 /* NoteListFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421922396AC80062DED7 /* NoteListFlowController.swift */; };
 		D1CC421C22396AD90062DED7 /* NoteListRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421B22396AD90062DED7 /* NoteListRenderer.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		494D993CEB0F6DBAEEB44B56 /* libPods-BentoBear.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BentoBear.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38A7FF987A531CE3F72E05B /* Pods-BentoBear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BentoBear.debug.xcconfig"; path = "Target Support Files/Pods-BentoBear/Pods-BentoBear.debug.xcconfig"; sourceTree = "<group>"; };
+		D18276952240154A008C2A34 /* WarBoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarBoxViewModel.swift; sourceTree = "<group>"; };
 		D1CC421722396AA50062DED7 /* NoteListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListBuilder.swift; sourceTree = "<group>"; };
 		D1CC421922396AC80062DED7 /* NoteListFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListFlowController.swift; sourceTree = "<group>"; };
 		D1CC421B22396AD90062DED7 /* NoteListRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListRenderer.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				D1FF79C62238008D00DEF677 /* AppDelegate.swift */,
 				D1CC421F2239903E0062DED7 /* Flow.swift */,
+				D18276952240154A008C2A34 /* WarBoxViewModel.swift */,
 				D1E0ABE4223FF72300AC5A93 /* Model */,
 				D1E0ABE1223FF07C00AC5A93 /* Post List */,
 				D1CC4216223969540062DED7 /* Note List */,
@@ -254,6 +257,7 @@
 				D1CC42202239903E0062DED7 /* Flow.swift in Sources */,
 				D1FF79C72238008D00DEF677 /* AppDelegate.swift in Sources */,
 				D1CC421822396AA50062DED7 /* NoteListBuilder.swift in Sources */,
+				D18276962240154A008C2A34 /* WarBoxViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
