@@ -12,39 +12,40 @@ import ReactiveSwift
 import ReactiveFeedback
 import Result
 
-final class PostListViewModel {// : WarBoxViewModel<PostListViewModel.Action, PostListViewModel.Route, PostListViewModel.Event, PostListViewModel.State> {
+enum PLVMPostsState: Equatable {
+    case empty
+    case showing([Post])
 }
 
-extension PostListViewModel {
-    enum PostsState: Equatable {
-        case empty
-        case showing([Post])
+enum PLVMLoadingState: Equatable {
+    case idle
+    case loading
+    case error(String)
+}
+
+struct PLVMState: StateType {
+    let posts: PLVMPostsState
+    let loading: PLVMLoadingState
+
+    static func initial() -> PLVMState {
+        return PLVMState(posts: .empty, loading: .idle)
     }
+}
 
-    enum LoadingState: Equatable {
-        case idle
-        case loading
-        case error(String)
-    }
+enum PLVMEvent: Equatable {
+    case ui(PLVMAction)
+}
 
-    struct State: StateType {
-        let posts: PostsState
-        let loading: LoadingState
+enum PLVMAction: Equatable {
+    case selectedPost(index: Int)
+}
 
-        static func initial() -> PostListViewModel.State {
-            return State(posts: .empty, loading: .idle)
-        }
-    }
+enum PLVMRoute {
+    case showPost
+}
 
-    enum Event: Equatable {
-        case ui(Action)
-    }
-
-    enum Action: Equatable {
-        case selectedPost(index: Int)
-    }
-
-    enum Route {
-        case showPost
+final class PostListViewModel: WarBoxViewModel<PLVMAction, PLVMRoute, PLVMEvent, PLVMState> {
+    override init() {
+        super.init()
     }
 }
