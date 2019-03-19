@@ -29,7 +29,20 @@ struct PostListRenderer: BoxRenderer {
     }
 
     func render(state: PostListViewModel.State) -> Screen<SectionID, RowID> {
-        return renderEmpty(rightBarItems: [activity])
+        let rightBarItems: [BarButtonItem]
+        switch state.loading {
+        case .idle, .error(_):
+            rightBarItems = [updateButton]
+        case .loading:
+            rightBarItems = [activity]
+        }
+
+        switch state.posts {
+        case .empty:
+            return renderEmpty(rightBarItems: rightBarItems)
+        case .showing(let posts):
+            return renderPosts(posts, rightBarItems: rightBarItems)
+        }
     }
 
     private func renderEmpty(rightBarItems: [BarButtonItem]) -> Screen<SectionID, RowID> {
@@ -43,9 +56,28 @@ struct PostListRenderer: BoxRenderer {
                     id: RowID.noPostsMessage,
                     component: Component.Description(
                         text: ("PostList.NoPostsMessage").localized(),
-                        styleSheet: noPostsStyleSheet)
+                        styleSheet: noPostsStyleSheet
                     )
                 )
+            )
+    }
+
+    private func renderPosts(_ posts: [Post], rightBarItems: [BarButtonItem]) -> Screen<SectionID, RowID> {
+        return Screen(
+            title: ("PostList.Title").localized(),
+            rightBarItems: rightBarItems,
+            box: Box.empty
+                |-+ Section(id: SectionID.posts)
+                |---* posts.map { post in
+                    Node(
+                        id: RowID.post,
+                        component: Component.Description(
+                            text: post.title,
+                            styleSheet: noPostsStyleSheet
+                        )
+                    )
+                }
+        )
     }
 }
 
