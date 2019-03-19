@@ -71,9 +71,12 @@ struct PostListRenderer: BoxRenderer {
                 |---* posts.map { post in
                     Node(
                         id: RowID.post,
-                        component: Component.Description(
-                            text: post.title,
-                            styleSheet: noPostsStyleSheet
+                        component: Component.TitledDescription(
+                            texts: [.plain(post.title), .plain(String(post.body.prefix(50)))],
+                            detail: nil,
+                            accessory: .chevron,
+                            styleSheet: Component.TitledDescription.StyleSheet()
+                                .compose(\.textStyles[0].textColor, UIColor.darkText)
                         )
                     )
                 }
