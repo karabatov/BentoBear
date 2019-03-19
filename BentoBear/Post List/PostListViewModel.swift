@@ -56,6 +56,14 @@ final class PostListViewModel: BoxViewModel {
             }
             return State(posts: postState, loading: .idle)
 
+        // Switch to error state if we got a download error.
+        case (let posts, .loading, .failedLoadingPosts(let error)):
+            return State(posts: posts, loading: .error(error))
+
+        // If we are in error state, switch back to idle.
+        case (let posts, .error(_), _):
+            return State(posts: posts, loading: .idle)
+
         default:
             return state
         }
@@ -106,7 +114,7 @@ extension PostListViewModel {
     enum LoadingState: Equatable {
         case idle
         case loading
-        case error(String)
+        case error(UserFacingError)
     }
 
     struct State: Equatable {
