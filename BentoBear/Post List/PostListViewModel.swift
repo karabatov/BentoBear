@@ -19,11 +19,14 @@ final class PostListViewModel: BoxViewModel {
 
     private let (actions, actionsObserver) = Signal<Action, NoError>.pipe()
 
-    init() {
+    init(store: PostStore, downloader: PostDownloader) {
         state = Property(
             initial: .init(posts: .empty, loading: .idle),
             reduce: PostListViewModel.reduce,
-            feedbacks: []
+            feedbacks: [
+                PostListViewModel.whenEmptyIdle(store: store),
+                PostListViewModel.whenStartDownloading(downloader: downloader)
+            ]
         )
 
         routes = state.signal.skipRepeats().filterMap(PostListViewModel.makeRoute)

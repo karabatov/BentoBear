@@ -9,6 +9,7 @@
 import Foundation
 
 protocol PostDownloader {
+    /// Downloads posts, saves them and returns all posts from the store.
     func downloadPosts(overwriteExisting: Bool) -> [Post]
 }
 
@@ -19,7 +20,6 @@ final class PostDownloaderSaving: PostDownloader {
         self.store = store
     }
 
-    /// Downloads posts, saves them and returns all posts from the store.
     func downloadPosts(overwriteExisting: Bool) -> [Post] {
         _ = store.saveOnDevice(posts: [], overwrite: true)
         return store.loadAllOnDevice()
