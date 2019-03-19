@@ -124,6 +124,6 @@ extension PostListViewModel {
     }
 
     enum Route {
-        case showPost
+        case showPost(Post)
     }
 }

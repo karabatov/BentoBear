@@ -1,14 +1,14 @@
 //
-//  NoteListFlowController.swift
+//  PostListFlowController.swift
 //  BentoBear
 //
-//  Created by Yuri Karabatov on 13/03/2019.
+//  Created by Yuri Karabatov on 19/03/2019.
 //  Copyright © 2019 Yuri Karabatov. All rights reserved.
 //
 
 import UIKit
 
-final class NoteListFlowController {
+final class PostListFlowController {
     private let presentationFlow: Flow
     private let presenting: Flow
 
@@ -17,10 +17,10 @@ final class NoteListFlowController {
         self.presenting = presenting
     }
 
-    func handle(_ route: NoteListViewModel.Route) {
+    func handle(_ route: PostListViewModel.Route) {
         switch route {
-        case .showNote:
-            presenting.dismiss(true)
+        case .showPost(_):
+            break
         }
     }
 }
