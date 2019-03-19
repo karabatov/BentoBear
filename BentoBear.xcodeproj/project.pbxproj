@@ -75,6 +75,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D1130BF322415AD400C7BC63 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC421F2239903E0062DED7 /* Flow.swift */,
+				D18276952240154A008C2A34 /* AresViewModel.swift */,
+				D1130BED224150DD00C7BC63 /* LocalizedString.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		D1E0ABE1223FF07C00AC5A93 /* Post List */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,9 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				D1FF79C62238008D00DEF677 /* AppDelegate.swift */,
-				D1CC421F2239903E0062DED7 /* Flow.swift */,
-				D18276952240154A008C2A34 /* AresViewModel.swift */,
-				D1130BED224150DD00C7BC63 /* LocalizedString.swift */,
+				D1130BF322415AD400C7BC63 /* Helpers */,
 				D1E0ABE4223FF72300AC5A93 /* Model */,
 				D1E0ABE1223FF07C00AC5A93 /* Post List */,
 				D1FF79CD2238009000DEF677 /* Assets.xcassets */,
