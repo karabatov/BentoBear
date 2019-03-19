@@ -88,12 +88,9 @@ extension PostListViewModel {
         return Feedback { state -> SignalProducer<Event, NoError> in
             guard state.loading == .loading else { return .empty }
 
-            let postsSignal = downloader.downloadPosts(overwriteExisting: true)
+            return downloader.downloadPosts(overwriteExisting: true)
                 .map(Event.loadedPosts)
-
-            // return postsSignal
-
-            return SignalProducer.init([])
+                .replaceError { Event.failedLoadingPosts($0.toUserFacingError()) }
         }
     }
 }
@@ -120,6 +117,7 @@ extension PostListViewModel {
     enum Event: Equatable {
         case ui(Action)
         case loadedPosts([Post])
+        case failedLoadingPosts(UserFacingError)
         case startDownloadingPosts
     }
 

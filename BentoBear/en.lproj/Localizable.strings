@@ -8,3 +8,5 @@
 "PostList.Title" = "Posts";
 "PostList.NoPostsMessage" = "Nothing to see here, move along";
 "PostList.UpdateButton" = "Update";
+"PostDownloaderErrors.NetworkError.Title" = "Network error";
+"PostDownloaderErrors.NetworkError.Message" = "Unable to download posts";

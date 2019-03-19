@@ -14,6 +14,18 @@ enum PostDownloaderError: Error {
     case networkError
 }
 
+extension PostDownloaderError: UserFacingErrorConvertible {
+    func toUserFacingError() -> UserFacingError {
+        switch self {
+        case .networkError:
+            return UserFacingError(
+                title: "PostDownloaderErrors.NetworkError.Title".localized(),
+                message: "PostDownloaderErrors.NetworkError.Message".localized()
+            )
+        }
+    }
+}
+
 protocol PostDownloader {
     /// Downloads posts, saves them and returns all posts from the store.
     func downloadPosts(overwriteExisting: Bool) -> SignalProducer<[Post], PostDownloaderError>
