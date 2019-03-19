@@ -88,8 +88,12 @@ extension PostListViewModel {
         return Feedback { state -> SignalProducer<Event, NoError> in
             guard state.loading == .loading else { return .empty }
 
-            let posts = downloader.downloadPosts(overwriteExisting: true)
-            return .init(value: .loadedPosts(posts))
+            let postsSignal = downloader.downloadPosts(overwriteExisting: true)
+                .map(Event.loadedPosts)
+
+            // return postsSignal
+
+            return SignalProducer.init([])
         }
     }
 }

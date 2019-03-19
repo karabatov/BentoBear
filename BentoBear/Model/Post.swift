@@ -7,11 +7,10 @@
 //
 
 import Foundation
-import ReactiveSwift
 
 typealias PostID = Int
 
-struct Post: Equatable {
+struct Post: Equatable, Codable {
     let id: PostID
     let title: String
     let body: String
