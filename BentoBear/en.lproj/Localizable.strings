@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  BentoBear
+
+  Created by Yuri Karabatov on 19/03/2019.
+  Copyright © 2019 Yuri Karabatov. All rights reserved.
+*/
+"PostList.Title" = "Posts";
+"PostList.NoPostsMessage" = "Nothing to see here, move along";
+"PostList.UpdateButton" = "Update";
