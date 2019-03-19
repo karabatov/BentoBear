@@ -96,4 +96,39 @@ final class ViewModel: WarBoxViewModel<ConcreteAction, ConcreteRoute, ConcreteEv
     }
 }
 
+protocol LevelOne {
+    associatedtype TypeOne
+
+    var property: TypeOne { get }
+}
+
+protocol LevelTwo: LevelOne where TypeOne == TypeTwo {
+    associatedtype TypeTwo: Equatable
+
+    func foo(value: TypeTwo)
+}
+
+class LevelThree<TypeThree: Equatable>: LevelTwo {
+    typealias TypeTwo = TypeThree
+
+    let property: TypeThree
+
+    init(value: TypeThree) {
+        self.property = value
+    }
+
+    func foo(value: TypeThree) {
+        fatalError()
+    }
+}
+
+final class LevelFour: LevelThree<LevelFour.TypeFour> {
+}
+
+extension LevelFour {
+    enum TypeFour: Equatable {
+        case empty
+    }
+}
+
 */
