@@ -33,18 +33,14 @@ protocol PostDownloader {
 
 final class PostDownloaderSaving: PostDownloader {
     private let store: PostStore
-    private let session = URLSession()
 
     init(saveTo store: PostStore) {
         self.store = store
     }
 
     func downloadPosts(overwriteExisting: Bool) -> SignalProducer<[Post], PostDownloaderError> {
-        return SignalProducer.init { [weak self] observer, _ in
-            guard
-                let session = self?.session,
-                let url = URL(string: "http://jsonplaceholder.typicode.com/posts")
-            else { return }
+        return SignalProducer.init { observer, _ in
+            guard let url = URL(string: "http://jsonplaceholder.typicode.com/posts") else { return }
 
             let completion: (Data?, URLResponse?, Error?) -> Void = { (maybeData, maybeResponse, error) in
                 guard let data = maybeData, error == nil else {
@@ -58,7 +54,7 @@ final class PostDownloaderSaving: PostDownloader {
                 observer.sendCompleted()
             }
 
-            session.dataTask(with: url, completionHandler: completion).resume()
+            URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
         }
     }
 
