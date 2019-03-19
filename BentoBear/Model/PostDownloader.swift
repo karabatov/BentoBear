@@ -42,24 +42,26 @@ final class PostDownloaderSaving: PostDownloader {
         return SignalProducer.init { observer, _ in
             guard let url = URL(string: "http://jsonplaceholder.typicode.com/posts") else { return }
 
-            let completion: (Data?, URLResponse?, Error?) -> Void = { (maybeData, maybeResponse, error) in
+            let completion: (Data?, URLResponse?, Error?) -> Void = { [weak self] (maybeData, maybeResponse, error) in
+                defer {
+                    observer.sendCompleted()
+                }
+
                 guard let data = maybeData, error == nil else {
                     observer.send(error: .networkError)
-                    observer.sendCompleted()
                     return
                 }
 
-                let posts = try! JSONDecoder().decode([Post].self, from: data)
-                observer.send(value: posts)
-                observer.sendCompleted()
+                do {
+                    let posts = try JSONDecoder().decode([Post].self, from: data)
+                    _ = self?.store.saveOnDevice(posts: posts, overwrite: true)
+                    observer.send(value: self?.store.loadAllOnDevice() ?? [])
+                } catch {
+                    observer.send(error: .networkError)
+                }
             }
 
             URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
         }
-    }
-
-    func downloadPosts(overwriteExisting: Bool) -> [Post] {
-        _ = store.saveOnDevice(posts: [], overwrite: true)
-        return store.loadAllOnDevice()
     }
 }
