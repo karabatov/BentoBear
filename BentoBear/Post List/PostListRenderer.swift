@@ -87,7 +87,11 @@ struct PostListRenderer: BoxRenderer {
                     Node(
                         id: RowID.post,
                         component: Component.TitledDescription(
-                            texts: [.plain(post.post.title), .plain(post.bodyExcerpt())],
+                            texts: [
+                                // So that it looks more like an actual title.
+                                .plain(post.post.title.localizedCapitalized),
+                                .plain(post.bodyExcerpt())
+                            ],
                             detail: nil,
                             accessory: .chevron,
                             didTap: .selectedPost(post) >>> observer,
