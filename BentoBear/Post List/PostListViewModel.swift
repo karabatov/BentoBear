@@ -24,6 +24,7 @@ final class PostListViewModel: BoxViewModel {
             initial: .init(posts: .empty, loading: .idle),
             reduce: PostListViewModel.reduce,
             feedbacks: [
+                PostListViewModel.userActions(actions: actions),
                 PostListViewModel.whenEmptyIdle(store: store),
                 PostListViewModel.whenStartDownloading(downloader: downloader)
             ]
@@ -44,6 +45,10 @@ final class PostListViewModel: BoxViewModel {
 
         // We have signaled to start downloading, no matter if we have posts or not.
         case (let posts, .idle, .startDownloadingPosts):
+            return State(posts: posts, loading: .loading)
+
+        // We have signaled to start downloading, no matter if we have posts or not.
+        case (let posts, .idle, .ui(.updateTapped)):
             return State(posts: posts, loading: .loading)
 
         // Switch to idle and display posts or empty state when post loading is finished.
@@ -77,6 +82,12 @@ final class PostListViewModel: BoxViewModel {
 // MARK: Feedbacks
 
 extension PostListViewModel {
+    static func userActions(actions: Signal<Action, NoError>) -> Feedback<State, Event> {
+        return Feedback { _ in
+            return actions.map(Event.ui)
+        }
+    }
+
     /// Initial state: nothing is loaded from disk or network.
     static func whenEmptyIdle(store: PostStore) -> Feedback<State, Event> {
         return Feedback { state -> SignalProducer<Event, NoError> in
@@ -131,6 +142,7 @@ extension PostListViewModel {
 
     enum Action: Equatable {
         case selectedPost(index: Int)
+        case updateTapped
     }
 
     enum Route {

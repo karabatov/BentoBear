@@ -16,7 +16,7 @@ struct PostListRenderer: BoxRenderer {
     private let config: Config
     private let observer: Sink<PostListViewModel.Action>
 
-    private let updateButton = BarButtonItem.init(appearance: .text("PostList.UpdateButton".localized()))
+    private let updateButton: BarButtonItem
     private let activity = BarButtonItem.init(appearance: .activityIndicator)
 
     private var noPostsStyleSheet: Component.Description.StyleSheet {
@@ -26,6 +26,12 @@ struct PostListRenderer: BoxRenderer {
     init(observer: @escaping Sink<PostListViewModel.Action>, appearance: Appearance, config: Config) {
         self.config = config
         self.observer = observer
+
+        updateButton = BarButtonItem(
+            appearance: .text("PostList.UpdateButton".localized()),
+            accessibilityIdentifier: "PostList.UpdateButton".localized(),
+            callback: { observer(.updateTapped) }
+        )
     }
 
     func render(state: PostListViewModel.State) -> Screen<SectionID, RowID> {
