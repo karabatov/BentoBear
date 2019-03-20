@@ -26,7 +26,8 @@ final class PostListViewModel: BoxViewModel {
             feedbacks: [
                 PostListViewModel.userActions(actions: actions),
                 PostListViewModel.whenEmptyIdle(store: store),
-                PostListViewModel.whenStartDownloading(downloader: downloader)
+                PostListViewModel.whenStartDownloading(downloader: downloader),
+                PostListViewModel.whenPostSelected()
             ]
         )
 
@@ -74,7 +75,7 @@ final class PostListViewModel: BoxViewModel {
             return State(posts: .showing(posts, selected: post), loading: loading)
 
         // Deselect a post after it has been selected.
-        case (.showing(let posts, selected: let post), let loading, _) where post != nil:
+        case (.showing(let posts, selected: let post), let loading, .selectedPost) where post != nil:
             return State(posts: .showing(posts, selected: nil), loading: loading)
 
         default:
@@ -126,6 +127,18 @@ extension PostListViewModel {
                 .replaceError { Event.failedLoadingPosts($0.toUserFacingError()) }
         }
     }
+
+    /// Deselect a post after it has been selected.
+    static func whenPostSelected() -> Feedback<State, Event> {
+        return Feedback { state -> SignalProducer<Event, NoError> in
+            switch state.posts {
+            case .showing(_, selected: let selected) where selected != nil:
+                return .init(value: .selectedPost)
+            default:
+                return .empty
+            }
+        }
+    }
 }
 
 // MARK: State machine
@@ -152,6 +165,7 @@ extension PostListViewModel {
         case loadedPosts([RichPost])
         case failedLoadingPosts(UserFacingError)
         case startDownloadingPosts
+        case selectedPost
     }
 
     enum Action: Equatable {
