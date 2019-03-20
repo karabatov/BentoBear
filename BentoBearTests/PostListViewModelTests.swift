@@ -16,6 +16,7 @@ final class PostListViewModelTests: XCTestCase {
     private var savePosts: SignalProducer<Void, PostStoreError>!
     private var saveUsers: SignalProducer<Void, PostStoreError>!
     private var saveComments: SignalProducer<Void, PostStoreError>!
+    private var loadPosts: SignalProducer<[RichPost], PostDownloaderError>!
 
     private let onePost: [RichPost] = [
         RichPost(
@@ -39,12 +40,14 @@ final class PostListViewModelTests: XCTestCase {
         savePosts = nil
         saveUsers = nil
         saveComments = nil
+        loadPosts = nil
     }
 
     /// After lanching, we must have started loading if there are no posts.
     func testInitialStateLoading() {
         posts = []
         setUpSaveSuccess()
+        loadPosts = SignalProducer(value: [])
         viewModel = PostListViewModel(store: self, downloader: self)
 
         let loadingState = PostListViewModel.State(posts: .empty, loading: .loading)
@@ -53,7 +56,6 @@ final class PostListViewModelTests: XCTestCase {
 
         viewModel.state.signal
             .take(first: 1)
-            .logEvents()
             .observeValues { state in
                 XCTAssertEqual(state, loadingState)
                 expect.fulfill()
@@ -67,6 +69,7 @@ final class PostListViewModelTests: XCTestCase {
     func testInitialStateLoaded() {
         posts = onePost
         setUpSaveSuccess()
+        loadPosts = SignalProducer(value: [])
         viewModel = PostListViewModel(store: self, downloader: self)
 
         let loadedState = PostListViewModel.State(posts: .showing(onePost, selected: nil), loading: .idle)
@@ -75,7 +78,6 @@ final class PostListViewModelTests: XCTestCase {
 
         viewModel.state.signal
             .take(first: 1)
-            .logEvents()
             .observeValues { state in
                 XCTAssertEqual(state, loadedState)
                 expect.fulfill()
@@ -83,6 +85,68 @@ final class PostListViewModelTests: XCTestCase {
 
         viewModel.state.producer.start()
         wait(for: [expect], timeout: 1.0)
+    }
+
+    /// After loading new posts, state should settle on idle, loaded.
+    func testLoadingSuccessIdle() {
+        posts = []
+        setUpSaveSuccess()
+        loadPosts = SignalProducer(value: onePost)
+        viewModel = PostListViewModel(store: self, downloader: self)
+
+        let testStates = [
+            PostListViewModel.State(posts: .empty, loading: .loading),
+            PostListViewModel.State(posts: .showing(onePost, selected: nil), loading: .idle)
+        ]
+
+        let expect = XCTestExpectation(description: "Empty loading state should be followed by loaded idle.")
+
+        viewModel.state.signal
+            .collect(count: 2)
+            .observeValues { gotStates in
+                XCTAssertEqual(gotStates, testStates)
+                expect.fulfill()
+            }
+
+        viewModel.state.producer.start()
+        wait(for: [expect], timeout: 1.0)
+    }
+
+    /// When getting a download error, an alert should be displayed, followed by idle.
+    func testLoadingErrorAlertIdle() {
+        let downloadError = PostDownloaderError.networkError
+        posts = []
+        setUpSaveSuccess()
+        loadPosts = SignalProducer(error: downloadError)
+        viewModel = PostListViewModel(store: self, downloader: self)
+
+        let testStates = [
+            PostListViewModel.State(posts: .empty, loading: .loading),
+            PostListViewModel.State(posts: .empty, loading: .error(downloadError.toUserFacingError())),
+            PostListViewModel.State(posts: .empty, loading: .idle)
+        ]
+
+        let testRoute = PostListViewModel.Route.showError(downloadError.toUserFacingError())
+
+        let expect1 = XCTestExpectation(description: "Loading -> Error -> Idle")
+        let expect2 = XCTestExpectation(description: "Alert should be shown.")
+
+        viewModel.routes.signal
+            .take(first: 1)
+            .observeValues { gotRoute in
+                XCTAssertEqual(gotRoute, testRoute)
+                expect2.fulfill()
+            }
+
+        viewModel.state.signal
+            .collect(count: 3)
+            .observeValues { gotStates in
+                XCTAssertEqual(gotStates, testStates)
+                expect1.fulfill()
+        }
+
+        viewModel.state.producer.start()
+        wait(for: [expect1, expect2], timeout: 1.0)
     }
 }
 
@@ -106,6 +170,6 @@ extension PostListViewModelTests: PostStore {
 
 extension PostListViewModelTests: PostDownloader {
     func downloadPosts(overwriteExisting: Bool) -> SignalProducer<[RichPost], PostDownloaderError> {
-        return SignalProducer.init(value: [])
+        return loadPosts
     }
 }

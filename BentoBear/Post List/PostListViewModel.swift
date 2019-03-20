@@ -27,7 +27,8 @@ final class PostListViewModel: BoxViewModel {
                 PostListViewModel.userActions(actions: actions),
                 PostListViewModel.whenEmptyIdle(store: store),
                 PostListViewModel.whenStartDownloading(downloader: downloader),
-                PostListViewModel.whenPostSelected()
+                PostListViewModel.whenPostSelected(),
+                PostListViewModel.whenErrorClearError()
             ]
         )
 
@@ -38,7 +39,7 @@ final class PostListViewModel: BoxViewModel {
         actionsObserver.send(value: action)
     }
 
-    static func reduce(_ state: State, _ event: Event) -> State {
+    private static func reduce(_ state: State, _ event: Event) -> State {
         switch (state.posts, state.loading, event) {
         // Initial state, posts have been loaded (from disk).
         case (.empty, .idle, .loadedPosts(let posts)):
@@ -67,7 +68,7 @@ final class PostListViewModel: BoxViewModel {
             return State(posts: posts, loading: .error(error))
 
         // If we are in error state, switch back to idle.
-        case (let posts, .error(_), _):
+        case (let posts, .error(_), .clearError):
             return State(posts: posts, loading: .idle)
 
         // A post has been selected.
@@ -100,14 +101,14 @@ final class PostListViewModel: BoxViewModel {
 // MARK: Feedbacks
 
 extension PostListViewModel {
-    static func userActions(actions: Signal<Action, NoError>) -> Feedback<State, Event> {
+    private static func userActions(actions: Signal<Action, NoError>) -> Feedback<State, Event> {
         return Feedback { _ in
             return actions.map(Event.ui)
         }
     }
 
     /// Initial state: nothing is loaded from disk or network.
-    static func whenEmptyIdle(store: PostStore) -> Feedback<State, Event> {
+    private static func whenEmptyIdle(store: PostStore) -> Feedback<State, Event> {
         return Feedback { state -> SignalProducer<Event, NoError> in
             guard state.posts == .empty && state.loading == .idle else { return .empty }
 
@@ -121,7 +122,7 @@ extension PostListViewModel {
     }
 
     /// Download posts, both from UI and programmatically.
-    static func whenStartDownloading(downloader: PostDownloader) -> Feedback<State, Event> {
+    private static func whenStartDownloading(downloader: PostDownloader) -> Feedback<State, Event> {
         return Feedback { state -> SignalProducer<Event, NoError> in
             guard state.loading == .loading else { return .empty }
 
@@ -132,11 +133,23 @@ extension PostListViewModel {
     }
 
     /// Deselect a post after it has been selected.
-    static func whenPostSelected() -> Feedback<State, Event> {
+    private static func whenPostSelected() -> Feedback<State, Event> {
         return Feedback { state -> SignalProducer<Event, NoError> in
             switch state.posts {
             case .showing(_, selected: let selected) where selected != nil:
                 return .init(value: .selectedPost)
+            default:
+                return .empty
+            }
+        }
+    }
+
+    /// Clear error after erroring out.
+    private static func whenErrorClearError() -> Feedback<State, Event> {
+        return Feedback { state -> SignalProducer<Event, NoError> in
+            switch state.loading {
+            case .error(_):
+                return .init(value: .clearError)
             default:
                 return .empty
             }
@@ -169,6 +182,7 @@ extension PostListViewModel {
         case failedLoadingPosts(UserFacingError)
         case startDownloadingPosts
         case selectedPost
+        case clearError
     }
 
     enum Action: Equatable {
@@ -176,7 +190,7 @@ extension PostListViewModel {
         case updateTapped
     }
 
-    enum Route {
+    enum Route: Equatable {
         case showPost(RichPost)
         case showError(UserFacingError)
     }
