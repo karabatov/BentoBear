@@ -79,7 +79,7 @@ struct PostDetailRenderer: BoxRenderer {
                     |---+ Node(
                         id: RowID.comments,
                         component: Component.Description(
-                            text: String(post.comments.count),
+                            text: String.localizedStringWithFormat("PostDetail.NComments".localized(), post.comments.count),
                             styleSheet: commentStyle
                         )
                     )
