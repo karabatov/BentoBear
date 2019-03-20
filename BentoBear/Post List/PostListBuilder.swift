@@ -13,7 +13,10 @@ import ReactiveSwift
 struct PostListBuilder {
     func make() -> UIViewController {
         let postStore = PostStoreDefaults()
-        let viewModel = PostListViewModel(store: postStore, downloader: PostDownloaderSaving(saveTo: postStore))
+        let viewModel = PostListViewModel(
+            store: postStore,
+            downloader: PostDownloaderSaving(saveTo: postStore, downloadWith: NetworkDataInternet())
+        )
 
         let viewController = BoxViewController.init(
             viewModel: viewModel,

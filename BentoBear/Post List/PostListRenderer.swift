@@ -68,7 +68,7 @@ struct PostListRenderer: BoxRenderer {
             )
     }
 
-    private func renderPosts(_ posts: [Post], rightBarItems: [BarButtonItem]) -> Screen<SectionID, RowID> {
+    private func renderPosts(_ posts: [RichPost], rightBarItems: [BarButtonItem]) -> Screen<SectionID, RowID> {
         return Screen(
             title: ("PostList.Title").localized(),
             rightBarItems: rightBarItems,
@@ -78,7 +78,7 @@ struct PostListRenderer: BoxRenderer {
                     Node(
                         id: RowID.post,
                         component: Component.TitledDescription(
-                            texts: [.plain(post.title), .plain(String(post.body.prefix(50)))],
+                            texts: [.plain(post.post.title), .plain(String(post.post.body.prefix(50)))],
                             detail: nil,
                             accessory: .chevron,
                             didTap: .selectedPost(post) >>> observer,

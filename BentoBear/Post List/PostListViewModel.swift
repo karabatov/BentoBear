@@ -119,7 +119,7 @@ extension PostListViewModel {
 extension PostListViewModel {
     enum PostsState: Equatable {
         case empty
-        case showing([Post])
+        case showing([RichPost])
     }
 
     enum LoadingState: Equatable {
@@ -135,17 +135,17 @@ extension PostListViewModel {
 
     enum Event: Equatable {
         case ui(Action)
-        case loadedPosts([Post])
+        case loadedPosts([RichPost])
         case failedLoadingPosts(UserFacingError)
         case startDownloadingPosts
     }
 
     enum Action: Equatable {
-        case selectedPost(Post)
+        case selectedPost(RichPost)
         case updateTapped
     }
 
     enum Route {
-        case showPost(Post)
+        case showPost(RichPost)
     }
 }
