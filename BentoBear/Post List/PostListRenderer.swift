@@ -75,10 +75,18 @@ struct PostListRenderer: BoxRenderer {
             box: Box.empty
                 |-+ Section(id: SectionID.posts)
                 |---* posts.map { post in
-                    Node(
+                    let firstLine = post.post.body
+                        .split(separator: "\n")
+                        .first ?? ""
+                    /// Take first seven words of the first line.
+                    let cutBody = firstLine
+                        .split(separator: " ")
+                        .prefix(7)
+                        .joined(separator: " ")
+                    return Node(
                         id: RowID.post,
                         component: Component.TitledDescription(
-                            texts: [.plain(post.post.title), .plain(String(post.post.body.prefix(50)))],
+                            texts: [.plain(post.post.title), .plain(cutBody + "…")],
                             detail: nil,
                             accessory: .chevron,
                             didTap: .selectedPost(post) >>> observer,
