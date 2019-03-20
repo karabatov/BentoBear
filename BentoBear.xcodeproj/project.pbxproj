@@ -24,6 +24,7 @@
 		D1AF93FA2242A816007D0799 /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF93F92242A816007D0799 /* PostDetailViewModel.swift */; };
 		D1AF93FC2242A9AE007D0799 /* PostDetailRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF93FB2242A9AE007D0799 /* PostDetailRenderer.swift */; };
 		D1AF93FE2242DC7D007D0799 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = D1AF93FD2242DC7D007D0799 /* Localizable.stringsdict */; };
+		D1AF94072242E1B0007D0799 /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF94062242E1B0007D0799 /* PostListViewModelTests.swift */; };
 		D1CC42202239903E0062DED7 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421F2239903E0062DED7 /* Flow.swift */; };
 		D1E0ABE3223FF0A000AC5A93 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E0ABE2223FF0A000AC5A93 /* PostListViewModel.swift */; };
 		D1E0ABE6223FF73F00AC5A93 /* PostUserComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E0ABE5223FF73F00AC5A93 /* PostUserComment.swift */; };
@@ -31,6 +32,16 @@
 		D1FF79CE2238009000DEF677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1FF79CD2238009000DEF677 /* Assets.xcassets */; };
 		D1FF79D12238009000DEF677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FF79CF2238009000DEF677 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1AF94092242E1B0007D0799 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1FF79BB2238008D00DEF677 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1FF79C22238008D00DEF677;
+			remoteInfo = BentoBear;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		494D993CEB0F6DBAEEB44B56 /* libPods-BentoBear.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BentoBear.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +62,9 @@
 		D1AF93F92242A816007D0799 /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
 		D1AF93FB2242A9AE007D0799 /* PostDetailRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailRenderer.swift; sourceTree = "<group>"; };
 		D1AF93FD2242DC7D007D0799 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		D1AF94042242E1B0007D0799 /* BentoBearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BentoBearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AF94062242E1B0007D0799 /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
+		D1AF94082242E1B0007D0799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1CC421F2239903E0062DED7 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		D1E0ABE2223FF0A000AC5A93 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		D1E0ABE5223FF73F00AC5A93 /* PostUserComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserComment.swift; sourceTree = "<group>"; };
@@ -63,6 +77,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D1AF94012242E1B0007D0799 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1FF79C02238008D00DEF677 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +135,15 @@
 			path = PostDetail;
 			sourceTree = "<group>";
 		};
+		D1AF94052242E1B0007D0799 /* BentoBearTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF94062242E1B0007D0799 /* PostListViewModelTests.swift */,
+				D1AF94082242E1B0007D0799 /* Info.plist */,
+			);
+			path = BentoBearTests;
+			sourceTree = "<group>";
+		};
 		D1E0ABE1223FF07C00AC5A93 /* Post List */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				D1FF79C52238008D00DEF677 /* BentoBear */,
+				D1AF94052242E1B0007D0799 /* BentoBearTests */,
 				D1FF79C42238008D00DEF677 /* Products */,
 				418A338D848FBBE95825009F /* Pods */,
 				A5ADD3E2AD86C6DA0FCD1CC1 /* Frameworks */,
@@ -150,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				D1FF79C32238008D00DEF677 /* BentoBear.app */,
+				D1AF94042242E1B0007D0799 /* BentoBearTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +206,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D1AF94032242E1B0007D0799 /* BentoBearTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1AF940B2242E1B1007D0799 /* Build configuration list for PBXNativeTarget "BentoBearTests" */;
+			buildPhases = (
+				D1AF94002242E1B0007D0799 /* Sources */,
+				D1AF94012242E1B0007D0799 /* Frameworks */,
+				D1AF94022242E1B0007D0799 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1AF940A2242E1B0007D0799 /* PBXTargetDependency */,
+			);
+			name = BentoBearTests;
+			productName = BentoBearTests;
+			productReference = D1AF94042242E1B0007D0799 /* BentoBearTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D1FF79C22238008D00DEF677 /* BentoBear */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1FF79D52238009000DEF677 /* Build configuration list for PBXNativeTarget "BentoBear" */;
@@ -203,6 +253,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Yuri Karabatov";
 				TargetAttributes = {
+					D1AF94032242E1B0007D0799 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D1FF79C22238008D00DEF677;
+					};
 					D1FF79C22238008D00DEF677 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -222,11 +276,19 @@
 			projectRoot = "";
 			targets = (
 				D1FF79C22238008D00DEF677 /* BentoBear */,
+				D1AF94032242E1B0007D0799 /* BentoBearTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D1AF94022242E1B0007D0799 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1FF79C12238008D00DEF677 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +350,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D1AF94002242E1B0007D0799 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1AF94072242E1B0007D0799 /* PostListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1FF79BF2238008D00DEF677 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +385,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D1AF940A2242E1B0007D0799 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1FF79C22238008D00DEF677 /* BentoBear */;
+			targetProxy = D1AF94092242E1B0007D0799 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		D1130BEC22414F2D00C7BC63 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -335,6 +413,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D1AF940C2242E1B1007D0799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BC9H7L8K6;
+				INFOPLIST_FILE = BentoBearTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yurikarabatov.BentoBearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BentoBear.app/BentoBear";
+			};
+			name = Debug;
+		};
+		D1AF940D2242E1B1007D0799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BC9H7L8K6;
+				INFOPLIST_FILE = BentoBearTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yurikarabatov.BentoBearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BentoBear.app/BentoBear";
+			};
+			name = Release;
+		};
 		D1FF79D32238009000DEF677 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -492,6 +612,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D1AF940B2242E1B1007D0799 /* Build configuration list for PBXNativeTarget "BentoBearTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1AF940C2242E1B1007D0799 /* Debug */,
+				D1AF940D2242E1B1007D0799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1FF79BE2238008D00DEF677 /* Build configuration list for PBXProject "BentoBear" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

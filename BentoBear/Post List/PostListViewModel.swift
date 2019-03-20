@@ -38,7 +38,7 @@ final class PostListViewModel: BoxViewModel {
         actionsObserver.send(value: action)
     }
 
-    private static func reduce(_ state: State, _ event: Event) -> State {
+    static func reduce(_ state: State, _ event: Event) -> State {
         switch (state.posts, state.loading, event) {
         // Initial state, posts have been loaded (from disk).
         case (.empty, .idle, .loadedPosts(let posts)):
