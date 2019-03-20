@@ -9,10 +9,38 @@
 import Foundation
 import Bento
 import BentoKit
+import StyleSheets
 
 struct PostDetailRenderer: BoxRenderer {
     private let config: Config
     private let observer: Sink<PostDetailViewModel.Action>
+
+    private var titleStyle: Component.Description.StyleSheet {
+        return Component.Description.StyleSheet(
+            text: LabelStyleSheet(
+                font: UIFont.preferredFont(forTextStyle: .headline)
+            )
+        )
+    }
+
+    private var authorStyle: Component.Description.StyleSheet {
+        return Component.Description.StyleSheet(
+            text: LabelStyleSheet(
+                font: UIFont.preferredFont(forTextStyle: .subheadline),
+                textColor: UIColor.lightGray
+            )
+        )
+    }
+
+    private var commentStyle: Component.Description.StyleSheet {
+        return Component.Description.StyleSheet(
+            text: LabelStyleSheet(
+                font: UIFont.preferredFont(forTextStyle: .footnote),
+                textColor: UIColor.darkGray,
+                textAlignment: .center
+            )
+        )
+    }
 
     init(observer: @escaping Sink<PostDetailViewModel.Action>, appearance: Appearance, config: Config) {
         self.config = config
@@ -23,21 +51,22 @@ struct PostDetailRenderer: BoxRenderer {
         switch state {
         case .showingPost(let post):
             return Screen(
-                title: "Post",
+                title: "PostDetail.Title".localized(),
+                shouldUseSystemSeparators: false,
                 box: Box.empty
                     |-+ Section(id: SectionID.post)
                     |---+ Node(
-                        id: RowID.author,
+                        id: RowID.title,
                         component: Component.Description(
-                            text: post.author.name,
-                            styleSheet: Component.Description.StyleSheet()
+                            text: post.post.title.localizedCapitalized,
+                            styleSheet: titleStyle
                         )
                     )
                     |---+ Node(
-                        id: RowID.title,
+                        id: RowID.author,
                         component: Component.Description(
-                            text: post.post.title,
-                            styleSheet: Component.Description.StyleSheet()
+                            text: String(format: "PostDetail.ByAuthor".localized(), post.author.name),
+                            styleSheet: authorStyle
                         )
                     )
                     |---+ Node(
@@ -51,7 +80,7 @@ struct PostDetailRenderer: BoxRenderer {
                         id: RowID.comments,
                         component: Component.Description(
                             text: String(post.comments.count),
-                            styleSheet: Component.Description.StyleSheet()
+                            styleSheet: commentStyle
                         )
                     )
                 )
