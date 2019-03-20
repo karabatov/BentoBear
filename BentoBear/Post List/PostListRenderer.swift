@@ -20,7 +20,15 @@ struct PostListRenderer: BoxRenderer {
     private let activity = BarButtonItem.init(appearance: .activityIndicator)
 
     private var noPostsStyleSheet: Component.Description.StyleSheet {
-        return Component.Description.StyleSheet()
+        return Component.Description.StyleSheet(
+            text: LabelStyleSheet(
+                font: UIFont.preferredFont(forTextStyle: .footnote),
+                textColor: UIColor.lightGray,
+                textAlignment: .center,
+                numberOfLines: 0,
+                lineBreakMode: .byWordWrapping
+            )
+        )
     }
 
     init(observer: @escaping Sink<PostListViewModel.Action>, appearance: Appearance, config: Config) {
