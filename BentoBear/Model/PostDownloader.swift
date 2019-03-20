@@ -33,35 +33,24 @@ protocol PostDownloader {
 
 final class PostDownloaderSaving: PostDownloader {
     private let store: PostStore
+    private let netData: NetworkData
 
-    init(saveTo store: PostStore) {
+    init(saveTo store: PostStore, downloadWith: NetworkData) {
         self.store = store
+        self.netData = downloadWith
     }
 
     func downloadPosts(overwriteExisting: Bool) -> SignalProducer<[Post], PostDownloaderError> {
-        return SignalProducer.init { observer, _ in
-            guard let url = URL(string: "http://jsonplaceholder.typicode.com/posts") else { return }
-
-            let completion: (Data?, URLResponse?, Error?) -> Void = { [weak self] (maybeData, maybeResponse, error) in
-                defer {
-                    observer.sendCompleted()
-                }
-
-                guard let data = maybeData, error == nil else {
-                    observer.send(error: .networkError)
-                    return
-                }
-
+        return netData.fetchData(from: "http://jsonplaceholder.typicode.com/posts")
+            .attemptMap({ (data: Data) -> Result<[Post], NetworkDataError> in
                 do {
                     let posts = try JSONDecoder().decode([Post].self, from: data)
-                    _ = self?.store.saveOnDevice(posts: posts, overwrite: true)
-                    observer.send(value: self?.store.loadAllOnDevice() ?? [])
+                    self.store.saveOnDevice(posts: posts, overwrite: true)
+                    return Result(value: self.store.loadAllOnDevice())
                 } catch {
-                    observer.send(error: .networkError)
+                    return Result(error: NetworkDataError.networkError)
                 }
-            }
-
-            URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-        }
+            })
+            .mapError { _ in PostDownloaderError.networkError }
     }
 }

@@ -19,6 +19,7 @@
 		D18276962240154A008C2A34 /* AresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18276952240154A008C2A34 /* AresViewModel.swift */; };
 		D18276982240441C008C2A34 /* PostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18276972240441C008C2A34 /* PostStore.swift */; };
 		D182769A22404C5C008C2A34 /* PostDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D182769922404C5C008C2A34 /* PostDownloader.swift */; };
+		D1AF93F52242620F007D0799 /* NetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF93F42242620F007D0799 /* NetworkData.swift */; };
 		D1CC42202239903E0062DED7 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421F2239903E0062DED7 /* Flow.swift */; };
 		D1E0ABE3223FF0A000AC5A93 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E0ABE2223FF0A000AC5A93 /* PostListViewModel.swift */; };
 		D1E0ABE6223FF73F00AC5A93 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E0ABE5223FF73F00AC5A93 /* Post.swift */; };
@@ -41,6 +42,7 @@
 		D18276952240154A008C2A34 /* AresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AresViewModel.swift; sourceTree = "<group>"; };
 		D18276972240441C008C2A34 /* PostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStore.swift; sourceTree = "<group>"; };
 		D182769922404C5C008C2A34 /* PostDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDownloader.swift; sourceTree = "<group>"; };
+		D1AF93F42242620F007D0799 /* NetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkData.swift; sourceTree = "<group>"; };
 		D1CC421F2239903E0062DED7 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		D1E0ABE2223FF0A000AC5A93 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		D1E0ABE5223FF73F00AC5A93 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				D1E0ABE5223FF73F00AC5A93 /* Post.swift */,
 				D18276972240441C008C2A34 /* PostStore.swift */,
 				D182769922404C5C008C2A34 /* PostDownloader.swift */,
+				D1AF93F42242620F007D0799 /* NetworkData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				D1E0ABE3223FF0A000AC5A93 /* PostListViewModel.swift in Sources */,
 				D1130BEE224150DD00C7BC63 /* LocalizedString.swift in Sources */,
 				D1130BF92242582300C7BC63 /* Apply.swift in Sources */,
+				D1AF93F52242620F007D0799 /* NetworkData.swift in Sources */,
 				D1130BF5224168D700C7BC63 /* ReduceError.swift in Sources */,
 				D18276982240441C008C2A34 /* PostStore.swift in Sources */,
 				D1130BF22241587C00C7BC63 /* PostListBuilder.swift in Sources */,
