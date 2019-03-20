@@ -49,6 +49,6 @@ struct PostListBuilder: PostListChildBuilders {
     }
 
     func makePostDetail(presenting: Flow, post: RichPost) -> UIViewController {
-        return postDetailBuilder.make()
+        return postDetailBuilder.make(post: post)
     }
 }
