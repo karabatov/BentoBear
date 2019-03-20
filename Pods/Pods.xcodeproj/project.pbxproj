@@ -74,7 +74,7 @@
 		4D48690A90C075F81794FB548B253E65 /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EBADECC51BB285B9D0903FE4389F6 /* UIActivityIndicatorView.swift */; };
 		4D49FBAEC132EFD7A8D4F4A5937A0987 /* DeleteAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB8D67B94BC74F9BDF0EB1EFAF940C /* DeleteAction.swift */; };
 		506CC67DFF6F060EA6C4F1A4CD9FC677 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E95F6182B3A108E4FF556BCFA7F112 /* Component.swift */; };
-		506E80A0CAEB1577BCAD6997444C7255 /* Pods-BentoBear-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 196E00ED36520DE28677937F01E7A4B8 /* Pods-BentoBear-dummy.m */; };
+		506E80A0CAEB1577BCAD6997444C7255 /* Pods-BentoBear-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA688205B279F79B6DE1F3E3FF762D98 /* Pods-BentoBear-dummy.m */; };
 		5099F3403763668ACF2F8547784E9CA6 /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840561DD52E873027DA08CA3C51E403D /* Deprecations+Removals.swift */; };
 		525B9FA39D49F438BCC354616E2F35BF /* TableViewContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B3C8DF37109091BD4A24D2ADCA6F32 /* TableViewContainerCell.swift */; };
 		53B784AB561C5C36A1E62FAB7B743725 /* ViewStyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25B81AD0773E63407BB510C0D31C8F9 /* ViewStyleSheet.swift */; };
@@ -129,6 +129,7 @@
 		A64DA16585964B16E120054E7B1DEA28 /* AnyObject+Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2BA965B41730D3DA5FB212D6E101B /* AnyObject+Lifetime.swift */; };
 		A6892F8988A4670E645D4774DE1421B5 /* EmptySpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6568C7B8F6215930790675A56B5142FD /* EmptySpace.swift */; };
 		A81DE4E1E9A3A47377CED35F6D85B0F2 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0A59C8576BB93339118ABC51141D8 /* Optional.swift */; };
+		A88E779849ACAA40721CFB70C33222D9 /* Pods-BentoBearTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BB68F84D5FDB40DA8D3F91DDBE1C07 /* Pods-BentoBearTests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A929792AD2F4D6526A2B1AB7454C1C0E /* FocusCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB8F5247F67236865A0E64BC337A9CF /* FocusCoordinator.swift */; };
 		A9CB2650DF962E09B38DD454CB390CDB /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA46846F6C8E072FF801150C0EAEDC2 /* StyleSheet.swift */; };
 		AA667F82600AD250BC36AE6608E31049 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5269164CB3BD9A42948749BD6D4C5 /* UIButton.swift */; };
@@ -140,7 +141,7 @@
 		AFBA0CA14C9B930172593010B548C98A /* NoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6EBC2981977A059133007DEC69721 /* NoError.swift */; };
 		AFD0F86641C048A9B3883D24B0BB457D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74484E5A06BDDE9CF41C057F166130E1 /* BaseView.swift */; };
 		B3866266677434C9E6243F7BDB5630C3 /* ImageOrLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD09378AE8E239B0FFEA5483979C4E9 /* ImageOrLabelView.swift */; };
-		B5C122B78C26A55D1C65BC9DFD9B8109 /* Pods-BentoBear-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB7FB49E58E382811B4D03C4BB14B5F /* Pods-BentoBear-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5C122B78C26A55D1C65BC9DFD9B8109 /* Pods-BentoBear-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 908A982E7BEF9B10EDB6AAEB0FF5BE07 /* Pods-BentoBear-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B7E4265D0598B84B5DD330C19D7A7870 /* UISelection​Feedback​Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11BBE010BC278FE07209B2C2BC94D9E /* UISelection​Feedback​Generator.swift */; };
 		B856761B2BF9ED081267FAA76AB4FEE8 /* Bool+Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26AA261F02330DDA02D150026907FA /* Bool+Assertions.swift */; };
 		B8E78470D47747454F1103EA5DA818FE /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F504D264EAE944DC372C12D4D186A /* UISearchBar.swift */; };
@@ -188,6 +189,7 @@
 		E6A9612D48483395FB00920D8CB99EE1 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D9FEB454C498B3C45C145A39486C0 /* Disposable.swift */; };
 		E6C5761F5533AAD4CBC240BB7ADE64B4 /* ResultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81378C8C259C86BD9805F0545162D680 /* ResultExtensions.swift */; };
 		E8D1573C61D29ED5216B42D28B101E95 /* UIStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1761736BE56B8315D16507E62E142D0C /* UIStepper.swift */; };
+		E97E5519E11EC86BC5756261459BC85F /* Pods-BentoBearTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4764DD01AAD7C6E4265F75FF291560 /* Pods-BentoBearTests-dummy.m */; };
 		E9FDE15D40D1D877D71D771DC5E82B9A /* UIButton+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB8ACFBD8AFB16A641AC50C7CEC5D0 /* UIButton+Closure.swift */; };
 		EB1D6C84101306197E5FC674CD6F3973 /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB6746EF2FE26BE15A30F86EFF05A3A /* Snapshot.swift */; };
 		EB2F8FFE29559E750EBB56792984BC62 /* AutoRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35A45A632A1DD1AF5CE79318072E8A /* AutoRenderable.swift */; };
@@ -207,6 +209,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		09DB2855258CE39610C48784210AA8A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7652BB64A49F07A079D7A10F6FF01A2A;
+			remoteInfo = StyleSheets;
+		};
 		0E8E3F9910E65DD750F62C7B52585A38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -227,6 +236,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2B5023FB8617950D251C0367821C2E89;
 			remoteInfo = ReactiveSwift;
+		};
+		443AED6E8073A26C5FFB1E4C24B3FBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D1F620B90C67EFF67C7B2CE0F5B7230;
+			remoteInfo = ReactiveFeedback;
 		};
 		4F506EBA5800FD44D716CF9A10BCD77B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -256,6 +272,20 @@
 			remoteGlobalIDString = 7652BB64A49F07A079D7A10F6FF01A2A;
 			remoteInfo = StyleSheets;
 		};
+		68A20C4C2039A5D2446BCB430446CC3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBA6054FA58640CF494D0782ED645A6F;
+			remoteInfo = Result;
+		};
+		6F26761A522EB4276CC5448A46AC2B0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B5023FB8617950D251C0367821C2E89;
+			remoteInfo = ReactiveSwift;
+		};
 		712833D33186D3B124DA9C2B22D34DA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -270,12 +300,26 @@
 			remoteGlobalIDString = A844132ECD92072B29C9EC6FBD6FCE59;
 			remoteInfo = BentoKit;
 		};
+		999B77B317DBAD59ECAC64DCE8C77050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF738292B1196CE7F09156875B83D7D;
+			remoteInfo = Bento;
+		};
 		9C3BE74C5D47A2CB85D2BA3EFF5E3A9E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 793BE856F948AF74A6A89C382B69C72A;
 			remoteInfo = ReactiveCocoa;
+		};
+		A2F00279B907A8C668B5178AA63D29E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A844132ECD92072B29C9EC6FBD6FCE59;
+			remoteInfo = BentoKit;
 		};
 		B9AD679E9DC63EB5C9777B72E0C574FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -312,6 +356,20 @@
 			remoteGlobalIDString = BAADEED1627294303A411FCD2F854BE5;
 			remoteInfo = FlexibleDiff;
 		};
+		D017195153B6A313737B17560F025AC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAADEED1627294303A411FCD2F854BE5;
+			remoteInfo = FlexibleDiff;
+		};
+		D7CC8991DF6B5B0CD2C018B7FD4598AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 793BE856F948AF74A6A89C382B69C72A;
+			remoteInfo = ReactiveCocoa;
+		};
 		E0F3C7F706E92A1CF0685680F5E84FF0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -333,15 +391,14 @@
 		03A526BFFAA56A2D2695BAABF7D38AFD /* BoxAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoxAppearance.swift; path = BentoKit/BentoKit/Screen/BoxAppearance.swift; sourceTree = "<group>"; };
 		03D25902F52F956817DD72203302F6F5 /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = BentoKit/BentoKit/Helpers/Extensions/UIViewExtensions.swift; sourceTree = "<group>"; };
 		0417DF1ED27AE6970F2B8C52FED07372 /* ReactiveCocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveCocoa-dummy.m"; sourceTree = "<group>"; };
+		056799E2B7A227AC0B336DBF7DEB77CC /* Pods-BentoBearTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BentoBearTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		05DF64AFFFD77BB9570C688B2DB830D9 /* UISegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISegmentedControl.swift; path = ReactiveCocoa/UIKit/UISegmentedControl.swift; sourceTree = "<group>"; };
+		06765D761078D567540BFC36690F5AD6 /* libBentoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBentoKit.a; path = libBentoKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		082517815FE32B30C650013208E35667 /* NSObject+ReactiveExtensionsProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+ReactiveExtensionsProvider.swift"; path = "ReactiveCocoa/NSObject+ReactiveExtensionsProvider.swift"; sourceTree = "<group>"; };
-		08313D08BD3F67D170DB068251ED1CE5 /* Pods-BentoBear-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BentoBear-resources.sh"; sourceTree = "<group>"; };
 		0883092F5FBB386197C79D4C4B0562C3 /* FocusEligibilitySource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FocusEligibilitySource.swift; path = Bento/Adapters/FocusEligibilitySource.swift; sourceTree = "<group>"; };
 		0AA35DC2649308C74E8D40D00BF9E05F /* UIControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIControl.swift; path = ReactiveCocoa/UIKit/UIControl.swift; sourceTree = "<group>"; };
 		0C0FEFE469F2EDF3394D3EB37DF0FD84 /* FlexibleDiff-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexibleDiff-dummy.m"; sourceTree = "<group>"; };
-		0C3221859252F809A3E9D4F78E058DF1 /* Pods-BentoBear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BentoBear.release.xcconfig"; sourceTree = "<group>"; };
 		0E7C9CE19158C8102D20E417B7439DF6 /* FlexibleDiff-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexibleDiff-umbrella.h"; sourceTree = "<group>"; };
-		0EB7050EDD6A56FB76CDAD889D668C1F /* libBento.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBento.a; path = libBento.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0F62B0DCD83FF28F54E6D74B0EC47B /* FocusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FocusableView.swift; path = Bento/Renderable/FocusableView.swift; sourceTree = "<group>"; };
 		109A8CC9F98631DCAFC6209DE8AF9552 /* StyleSheets-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StyleSheets-prefix.pch"; sourceTree = "<group>"; };
 		111694B7E680830B6EBF5301D0730F88 /* StyleSheets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StyleSheets-dummy.m"; sourceTree = "<group>"; };
@@ -351,27 +408,27 @@
 		12BA163092F71AA41542FAB670C6F849 /* ImageOrLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageOrLabel.swift; path = BentoKit/BentoKit/Components/ImageOrLabel.swift; sourceTree = "<group>"; };
 		13B61D3D64459B8D20673FEF6F52A343 /* CollectionViewAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewAdapter.swift; path = Bento/Adapters/CollectionViewAdapter.swift; sourceTree = "<group>"; };
 		13DA10F553D005CAA317D22BC462AB84 /* StackViewStyleSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StackViewStyleSheet.swift; path = StyleSheets/StyleSheets/StackViewStyleSheet.swift; sourceTree = "<group>"; };
-		156F09CC9400A1D4547B15C61EF855FE /* Pods-BentoBear-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BentoBear-acknowledgements.markdown"; sourceTree = "<group>"; };
+		14AF1B56C791A260430EAEA32C7014C6 /* libFlexibleDiff.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFlexibleDiff.a; path = libFlexibleDiff.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		15874A398C391A02F71A47DDA07BC219 /* ObjC+Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObjC+Constants.swift"; path = "ReactiveCocoa/ObjC+Constants.swift"; sourceTree = "<group>"; };
-		1690D17380CF38AA8953982CD6BEACAE /* libResult.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libResult.a; path = libResult.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		16C09DE987A63DDDA126F4E63A658E5E /* libReactiveSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactiveSwift.a; path = libReactiveSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1761736BE56B8315D16507E62E142D0C /* UIStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIStepper.swift; path = ReactiveCocoa/UIKit/iOS/UIStepper.swift; sourceTree = "<group>"; };
 		1849DD7C39688D9DC133AC6D05646E96 /* Changeset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Changeset.swift; path = FlexibleDiff/Changeset.swift; sourceTree = "<group>"; };
 		18545FD2FF73E87CD5F82C59BA1C029D /* SearchBarStyleSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchBarStyleSheet.swift; path = StyleSheets/StyleSheets/SearchBarStyleSheet.swift; sourceTree = "<group>"; };
 		18B1F8C1ACF703442CC70C94969252ED /* ReactiveCocoa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReactiveCocoa.modulemap; sourceTree = "<group>"; };
 		190787E9CDA0FC514A16D43B20F583F7 /* ReactiveFeedback.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveFeedback.xcconfig; sourceTree = "<group>"; };
-		196E00ED36520DE28677937F01E7A4B8 /* Pods-BentoBear-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BentoBear-dummy.m"; sourceTree = "<group>"; };
 		19E95F6182B3A108E4FF556BCFA7F112 /* Component.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Component.swift; path = BentoKit/BentoKit/Components/Component.swift; sourceTree = "<group>"; };
 		1A4E1B4F043607BBC5E00B4D9E4FE5C8 /* BoxViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoxViewModel.swift; path = BentoKit/BentoKit/Screen/BoxViewModel.swift; sourceTree = "<group>"; };
 		1A7D3B3E62D776356F9A7C4BC31E2D39 /* FlexibleDiff.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexibleDiff.xcconfig; sourceTree = "<group>"; };
 		1BA053D7FE0CC8C377CEEE08B8A8507C /* FlexibleDiff.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexibleDiff.modulemap; sourceTree = "<group>"; };
 		1BD723C986641E40C12A09A06D7CEB8D /* UISwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISwitch.swift; path = ReactiveCocoa/UIKit/iOS/UISwitch.swift; sourceTree = "<group>"; };
+		1D53A1A3EAC472E949DDACCDE3377E8C /* libResult.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libResult.a; path = libResult.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DAD110481FDB4B4EDE82195B43C2027 /* libReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactiveCocoa.a; path = libReactiveCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCF7D8EBF65F1CA0CFBB56F337FDADE /* Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Description.swift; path = BentoKit/BentoKit/Components/Description.swift; sourceTree = "<group>"; };
 		1E18FA87C00D1567B86C0A52E13D220F /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Result/Result.swift; sourceTree = "<group>"; };
 		1F26AA261F02330DDA02D150026907FA /* Bool+Assertions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bool+Assertions.swift"; path = "BentoKit/BentoKit/Helpers/Extensions/Bool+Assertions.swift"; sourceTree = "<group>"; };
 		1F8CFB1110005782E7A09F0F0606AF77 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = BentoKit/BentoKit/Resources/Media.xcassets; sourceTree = "<group>"; };
 		204A479A30BD57C9A7E4FBB11BA0EA6B /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSLayoutConstraint.swift; path = ReactiveCocoa/Shared/NSLayoutConstraint.swift; sourceTree = "<group>"; };
 		21C37BD1E6EF6D53A3B0F6BE97B9A319 /* NSObject+BindingTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+BindingTarget.swift"; path = "ReactiveCocoa/NSObject+BindingTarget.swift"; sourceTree = "<group>"; };
+		22A161EE02266CA515EEC6506489D195 /* libBento.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBento.a; path = libBento.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		24AD7342AB630D4560C3EF58F0B9C84A /* Focusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Focusable.swift; path = Bento/Renderable/Focusable.swift; sourceTree = "<group>"; };
 		25B5269164CB3BD9A42948749BD6D4C5 /* UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = ReactiveCocoa/UIKit/UIButton.swift; sourceTree = "<group>"; };
 		26668B234FBB92E3D139BB6D18AF7FC4 /* UINotification​Feedback​Generator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINotification​Feedback​Generator.swift"; path = "ReactiveCocoa/UIKit/iOS/UINotification​Feedback​Generator.swift"; sourceTree = "<group>"; };
@@ -386,9 +443,8 @@
 		2DC43756161BF8391F8DC03E4FFEA8A4 /* ObjCRuntimeAliases.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjCRuntimeAliases.h; path = ReactiveCocoa/ObjCRuntimeAliases.h; sourceTree = "<group>"; };
 		2E465805F574E18D8908BFFC9A564AFD /* Bento-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bento-dummy.m"; sourceTree = "<group>"; };
 		3046B392BB2B8444DEF098263E121EF0 /* TableViewHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewHeaderFooterView.swift; path = Bento/Views/TableViewHeaderFooterView.swift; sourceTree = "<group>"; };
-		311AE5D2BB3ED058752D6B631204C715 /* libStyleSheets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libStyleSheets.a; path = libStyleSheets.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		319CA16617659DF7B19AB24C22938AFC /* libReactiveFeedback.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactiveFeedback.a; path = libReactiveFeedback.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		357ED1D386F505FEF8BAFA53FEED7F07 /* Accessory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Accessory.swift; path = BentoKit/BentoKit/Views/Accessory.swift; sourceTree = "<group>"; };
+		380E056A3480DFB95F5CD0D5252B85F8 /* Pods-BentoBearTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BentoBearTests.release.xcconfig"; sourceTree = "<group>"; };
 		3AD0A59C8576BB93339118ABC51141D8 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = Sources/Optional.swift; sourceTree = "<group>"; };
 		3B192CA161700838615E877E1ED9EA4A /* UIDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIDatePicker.swift; path = ReactiveCocoa/UIKit/iOS/UIDatePicker.swift; sourceTree = "<group>"; };
 		3C5A004B7D458D00C247E94ADEAADC60 /* BentoKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BentoKit.xcconfig; sourceTree = "<group>"; };
@@ -421,13 +477,15 @@
 		50FAD75C639D78338EE39860B27DE6AD /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Sources/Property.swift; sourceTree = "<group>"; };
 		531FB6A2796A1A1D5D33E21691F6D5B3 /* TableViewStyleSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewStyleSheet.swift; path = StyleSheets/StyleSheets/TableViewStyleSheet.swift; sourceTree = "<group>"; };
 		5AD80A9DE7690FC2F36DF603C9F76885 /* ReactiveCocoa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveCocoa.xcconfig; sourceTree = "<group>"; };
+		5B1D35A57540336292CB85FAAD40423B /* Pods-BentoBear-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BentoBear-acknowledgements.plist"; sourceTree = "<group>"; };
 		5D20066C6CF2B29D994D537741B3909D /* ReactiveFeedback.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReactiveFeedback.modulemap; sourceTree = "<group>"; };
-		5EAAFED061302F5C668941D6AEEB92BB /* libBentoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBentoKit.a; path = libBentoKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6181101CF220689CCE66AF4B23F2D6B0 /* UIScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScrollView.swift; path = ReactiveCocoa/UIKit/UIScrollView.swift; sourceTree = "<group>"; };
 		61F38345C9D1833C203DA5D37966592D /* ObjC+Selector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObjC+Selector.swift"; path = "ReactiveCocoa/ObjC+Selector.swift"; sourceTree = "<group>"; };
 		623685DE48AB0107271CCAF5FF8A41F4 /* Screen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Screen.swift; path = BentoKit/BentoKit/Screen/Screen.swift; sourceTree = "<group>"; };
 		6351E424CA5D8BE012A6C752727C3689 /* CollectionViewContainerReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewContainerReusableView.swift; path = Bento/Views/CollectionViewContainerReusableView.swift; sourceTree = "<group>"; };
+		63BC82013F07DF60367B86DBF3EAAA2B /* Pods-BentoBear-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BentoBear-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6428606731F649640ADA85B098CA39DB /* UIBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBarItem.swift; path = ReactiveCocoa/UIKit/UIBarItem.swift; sourceTree = "<group>"; };
+		643254FA4FD1BA8C1B34F4674D2617B8 /* Pods-BentoBear-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BentoBear-resources.sh"; sourceTree = "<group>"; };
 		650F778240C9BFBA57AF88610444C45B /* BentoCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BentoCollectionView.swift; path = Bento/Adapters/BentoCollectionView.swift; sourceTree = "<group>"; };
 		6568C7B8F6215930790675A56B5142FD /* EmptySpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmptySpace.swift; path = BentoKit/BentoKit/Components/EmptySpace.swift; sourceTree = "<group>"; };
 		65B3C8DF37109091BD4A24D2ADCA6F32 /* TableViewContainerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewContainerCell.swift; path = Bento/Views/TableViewContainerCell.swift; sourceTree = "<group>"; };
@@ -440,29 +498,33 @@
 		6AF2FA642627DD525F6E540B3E8D0D8B /* TableViewAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewAnimation.swift; path = Bento/Adapters/TableViewAnimation.swift; sourceTree = "<group>"; };
 		6B5A78AB0E01AA94377A905E079938A0 /* ResultProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultProtocol.swift; path = Result/ResultProtocol.swift; sourceTree = "<group>"; };
 		6C7F504D264EAE944DC372C12D4D186A /* UISearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISearchBar.swift; path = ReactiveCocoa/UIKit/iOS/UISearchBar.swift; sourceTree = "<group>"; };
+		6EEDF3AAD808C33BB13F9F7872DAE785 /* Pods-BentoBearTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BentoBearTests.modulemap"; sourceTree = "<group>"; };
 		6F5322F58239AE7F1CBF5154A9D7328C /* Bento.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Bento.modulemap; sourceTree = "<group>"; };
 		6F59C9BB3CCBE5EC3D6BAAF3C0BBC811 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = ReactiveCocoa/UIKit/UIView.swift; sourceTree = "<group>"; };
 		6FB6746EF2FE26BE15A30F86EFF05A3A /* Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snapshot.swift; path = FlexibleDiff/Snapshot.swift; sourceTree = "<group>"; };
+		6FCFF724C661C11BFE340418C2D72608 /* libPods-BentoBearTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BentoBearTests.a"; path = "libPods-BentoBearTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7200802D54CA77C1807B9D38E973F30E /* ValidatingProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidatingProperty.swift; path = Sources/ValidatingProperty.swift; sourceTree = "<group>"; };
 		74484E5A06BDDE9CF41C057F166130E1 /* BaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = BentoKit/BentoKit/Views/BaseView.swift; sourceTree = "<group>"; };
 		744BE1A584B6FD9CD4D187FD62266731 /* Activity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = BentoKit/BentoKit/Components/Activity.swift; sourceTree = "<group>"; };
-		74722111A8824455630B92BB54279C9B /* BentoKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BentoKit.bundle; path = "BentoKit-BentoKit.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74FDCCD9429B9E84DA4D903AD5187B73 /* libReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactiveCocoa.a; path = libReactiveCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		757082B7B008B5C43D4570AE9B7F5AF2 /* UICollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionView.swift; path = ReactiveCocoa/UIKit/UICollectionView.swift; sourceTree = "<group>"; };
 		780C0752A1AE2B65B7ADEAC966FB1594 /* HighlightingGesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HighlightingGesture.swift; path = BentoKit/BentoKit/Helpers/HighlightingGesture.swift; sourceTree = "<group>"; };
 		78D1C76711022ED621A0DA6E4B20E775 /* BentoKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BentoKit-prefix.pch"; sourceTree = "<group>"; };
+		7939D9B3EBB803A151B01ED6E0757C86 /* Pods-BentoBear.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BentoBear.modulemap"; sourceTree = "<group>"; };
 		79943B902F8AD94C82126778590A710A /* ReactiveSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveSwift-dummy.m"; sourceTree = "<group>"; };
 		7A2D1E54F834FB1758978EF65E8D9375 /* Result-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Result-dummy.m"; sourceTree = "<group>"; };
+		7A4764DD01AAD7C6E4265F75FF291560 /* Pods-BentoBearTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BentoBearTests-dummy.m"; sourceTree = "<group>"; };
 		7DFAAAC2923DEC3217877DF5482ED9AF /* ObjC+Messages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObjC+Messages.swift"; path = "ReactiveCocoa/ObjC+Messages.swift"; sourceTree = "<group>"; };
-		7FDA9C95EF856C14E6954A127A6887CC /* Pods-BentoBear-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BentoBear-acknowledgements.plist"; sourceTree = "<group>"; };
 		80A510B76AC092F7026BC928F4B31359 /* BoxTableViewAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoxTableViewAdapter.swift; path = BentoKit/BentoKit/Helpers/BoxTableViewAdapter.swift; sourceTree = "<group>"; };
 		80E56DCAA3A3D79DD10E9ADBF3F7F9DA /* Property+System.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Property+System.swift"; path = "ReactiveFeedback/Property+System.swift"; sourceTree = "<group>"; };
 		812CD9ED690775CC6CD41AEEE7448EC0 /* UIProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIProgressView.swift; path = ReactiveCocoa/UIKit/UIProgressView.swift; sourceTree = "<group>"; };
 		81378C8C259C86BD9805F0545162D680 /* ResultExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultExtensions.swift; path = Sources/ResultExtensions.swift; sourceTree = "<group>"; };
 		8174FC2F0DC6B49BA526BC4D9BD22022 /* CollectionViewSectionDiff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewSectionDiff.swift; path = Bento/Diff/CollectionViewSectionDiff.swift; sourceTree = "<group>"; };
 		819C6481590CADFAD9E25AA8AB7A198C /* Synchronizing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Synchronizing.swift; path = ReactiveCocoa/Synchronizing.swift; sourceTree = "<group>"; };
+		81A4E2BFE49155E4DE28F27416D6D6D4 /* libPods-BentoBear.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BentoBear.a"; path = "libPods-BentoBear.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		822FBD8356D35A15EDD366CF7D998CC2 /* MenuItemsResponding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemsResponding.swift; path = Bento/Renderable/MenuItemsResponding.swift; sourceTree = "<group>"; };
 		82AFE9C0BA0747A7B3AA35183F29757F /* UIFeedbackGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIFeedbackGenerator.swift; path = ReactiveCocoa/UIKit/iOS/UIFeedbackGenerator.swift; sourceTree = "<group>"; };
+		82D691CDCA41CE04546000C28459417F /* Pods-BentoBearTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BentoBearTests-resources.sh"; sourceTree = "<group>"; };
+		83419CDB5BA4D12CE0AB87CE6A070BF9 /* libStyleSheets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libStyleSheets.a; path = libStyleSheets.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		840561DD52E873027DA08CA3C51E403D /* Deprecations+Removals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deprecations+Removals.swift"; path = "ReactiveCocoa/Deprecations+Removals.swift"; sourceTree = "<group>"; };
 		8438DF52CB72696CCF348ADC82A1B1BF /* Bento.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bento.xcconfig; sourceTree = "<group>"; };
 		84D9FC20C607A70BEFD9F733B29F732C /* UIKit+CollectionViewFocus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+CollectionViewFocus.swift"; path = "Bento/Renderable/UIKit+CollectionViewFocus.swift"; sourceTree = "<group>"; };
@@ -471,9 +533,11 @@
 		8AD3C14498DFF9BE95588EB056D4AF7B /* DelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelegateProxy.swift; path = ReactiveCocoa/DelegateProxy.swift; sourceTree = "<group>"; };
 		8BD09378AE8E239B0FFEA5483979C4E9 /* ImageOrLabelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageOrLabelView.swift; path = BentoKit/BentoKit/Views/ImageOrLabelView.swift; sourceTree = "<group>"; };
 		8DCC65BD506E6F2A47B25683E04AA432 /* ChangesetExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChangesetExtensions.swift; path = Bento/Diff/ChangesetExtensions.swift; sourceTree = "<group>"; };
+		8ED3853FC064E7C2BDDB9933A6591074 /* Pods-BentoBearTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BentoBearTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FA6EBC2981977A059133007DEC69721 /* NoError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoError.swift; path = Result/NoError.swift; sourceTree = "<group>"; };
 		8FC4C15A4A87AB2131FACF196EC6C640 /* Resources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resources.swift; path = BentoKit/BentoKit/Views/Resources.swift; sourceTree = "<group>"; };
 		90182034E9ED746F2B9B353EB4CBB57B /* FoundationExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationExtensions.swift; path = Sources/FoundationExtensions.swift; sourceTree = "<group>"; };
+		908A982E7BEF9B10EDB6AAEB0FF5BE07 /* Pods-BentoBear-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BentoBear-umbrella.h"; sourceTree = "<group>"; };
 		90EA5FC589A1F2B9FE84F0226C51101F /* NSLayoutConstraintExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSLayoutConstraintExtensions.swift; path = BentoKit/BentoKit/Helpers/Extensions/NSLayoutConstraintExtensions.swift; sourceTree = "<group>"; };
 		910ED8295A655F53F8A2528E2087027B /* BentoReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BentoReusableView.swift; path = Bento/Views/BentoReusableView.swift; sourceTree = "<group>"; };
 		922FF7878B26D7AA8E8B472559CA477C /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Bento/Bento/Node.swift; sourceTree = "<group>"; };
@@ -484,15 +548,16 @@
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E623E4C01821E188A2AA563335CE59E /* StyleSheets-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StyleSheets-umbrella.h"; sourceTree = "<group>"; };
 		A044CCB4AE330B0DB1C3080DC98363E7 /* UnidirectionalBinding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnidirectionalBinding.swift; path = Sources/UnidirectionalBinding.swift; sourceTree = "<group>"; };
+		A0E930255F522C0807A5C528377F196F /* libReactiveFeedback.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactiveFeedback.a; path = libReactiveFeedback.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E565B1B458CFC61FE79D2CE6D0288D /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = Sources/Action.swift; sourceTree = "<group>"; };
 		A213923172DE52371B4EEAC3E80B9F31 /* BentoTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BentoTableView.swift; path = BentoKit/BentoKit/Views/BentoTableView.swift; sourceTree = "<group>"; };
 		A5A0F14DF82A99484871617BE5515EE7 /* ResourceBundle-BentoKit-BentoKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BentoKit-BentoKit-Info.plist"; sourceTree = "<group>"; };
-		A62F8DB60C6748788B7D9625BBEEC984 /* Pods-BentoBear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BentoBear.debug.xcconfig"; sourceTree = "<group>"; };
 		A9A02EF4D3988024E13E323005E790D3 /* TextViewStyleSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextViewStyleSheet.swift; path = StyleSheets/StyleSheets/TextViewStyleSheet.swift; sourceTree = "<group>"; };
 		AA1A70BB825E75F34B955F2E9547DEF7 /* ReactiveCocoa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveCocoa-umbrella.h"; sourceTree = "<group>"; };
 		AB67489D14920C202A3618841CBF4A50 /* ReactiveFeedback-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveFeedback-umbrella.h"; sourceTree = "<group>"; };
 		AC02FEFCB9FE3673C2B1CC161B4ED6F0 /* Bento-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bento-umbrella.h"; sourceTree = "<group>"; };
 		ADF61C6E836798B90E90DE0EA4B3154F /* If.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = If.swift; path = Bento/Bento/If.swift; sourceTree = "<group>"; };
+		AF7DF3070191FB3B0CA2838B1767AD43 /* Pods-BentoBear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BentoBear.release.xcconfig"; sourceTree = "<group>"; };
 		AFE6431FF7C72A55AD400C7AC27F9013 /* Bag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bag.swift; path = Sources/Bag.swift; sourceTree = "<group>"; };
 		B0BBCC79D41E7EF0D385E8810C5BAAD1 /* Deletable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deletable.swift; path = Bento/Renderable/Deletable.swift; sourceTree = "<group>"; };
 		B1C4B4983840E1E978C703A9A304B95C /* ObjC+RuntimeSubclassing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObjC+RuntimeSubclassing.swift"; path = "ReactiveCocoa/ObjC+RuntimeSubclassing.swift"; sourceTree = "<group>"; };
@@ -503,7 +568,6 @@
 		B390E0861125075F8851A9EEE0ED0E01 /* BoxExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoxExtensions.swift; path = BentoKit/BentoKit/Helpers/Extensions/BoxExtensions.swift; sourceTree = "<group>"; };
 		B4E1D7B1E83A51F65402A1A11A049C68 /* ObjCRuntimeAliases.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjCRuntimeAliases.m; path = ReactiveCocoa/ObjCRuntimeAliases.m; sourceTree = "<group>"; };
 		B59079AB676E2D503C96CA2992889782 /* BentoKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BentoKit.modulemap; sourceTree = "<group>"; };
-		B6F393E3ECE96990A7A6F5EA3A85C7B4 /* libPods-BentoBear.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BentoBear.a"; path = "libPods-BentoBear.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B72C7E89AE450A7E4E8C81F480EEEDE1 /* UITabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITabBarItem.swift; path = ReactiveCocoa/UIKit/UITabBarItem.swift; sourceTree = "<group>"; };
 		B7CDAB41EB35466E348AF8BA037B0617 /* NSObject+ObjCRuntime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+ObjCRuntime.swift"; path = "ReactiveCocoa/NSObject+ObjCRuntime.swift"; sourceTree = "<group>"; };
 		B8505F8C836C31182123CE447ABA38A6 /* UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILabel.swift; path = ReactiveCocoa/UIKit/UILabel.swift; sourceTree = "<group>"; };
@@ -512,11 +576,13 @@
 		BC616F9EEE9DDAB3E8986D7026A83F9C /* BentoKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BentoKit-umbrella.h"; sourceTree = "<group>"; };
 		BCA323501F2740251D1A7DBD0383D782 /* ReusableComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReusableComponents.swift; path = ReactiveCocoa/UIKit/ReusableComponents.swift; sourceTree = "<group>"; };
 		BCC1742A2BC7BE315B68FC18D314D024 /* TitledDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitledDescription.swift; path = BentoKit/BentoKit/Components/TitledDescription.swift; sourceTree = "<group>"; };
+		BE42F03CC15DA3EC2AAFAF09565481DA /* BentoKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BentoKit.bundle; path = "BentoKit-BentoKit.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFE2AB7C93701B2FC38B5A3F5CCCC09 /* Toggle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toggle.swift; path = BentoKit/BentoKit/Components/Toggle.swift; sourceTree = "<group>"; };
 		BF446C00ABF08443532BA870D4DF8014 /* UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableView.swift; path = ReactiveCocoa/UIKit/UITableView.swift; sourceTree = "<group>"; };
 		C11BBE010BC278FE07209B2C2BC94D9E /* UISelection​Feedback​Generator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISelection​Feedback​Generator.swift"; path = "ReactiveCocoa/UIKit/iOS/UISelection​Feedback​Generator.swift"; sourceTree = "<group>"; };
 		C11CEC0B1538D54201A643D2F0A25E28 /* InputNodes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputNodes.swift; path = BentoKit/BentoKit/Helpers/InputNodes.swift; sourceTree = "<group>"; };
 		C160157F433DA6D211D9EE0547C09412 /* Result.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Result.xcconfig; sourceTree = "<group>"; };
+		C2D8034E1FDB23B1CB497CFFD2946D95 /* Pods-BentoBear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BentoBear.debug.xcconfig"; sourceTree = "<group>"; };
 		C414F5370EC520E8E9AFBD66BCB303F6 /* Result-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-prefix.pch"; sourceTree = "<group>"; };
 		C4E6D9BF63EF7C217137C1A3AEB072B2 /* InteractionBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractionBehavior.swift; path = BentoKit/BentoKit/Components/InteractionBehavior.swift; sourceTree = "<group>"; };
 		C4F4AE01707A9437717E182A3AB41AE4 /* Result.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Result.modulemap; sourceTree = "<group>"; };
@@ -527,9 +593,10 @@
 		C6EC93F5B5B3F8696784C3B267362580 /* OptionPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionPicker.swift; path = BentoKit/BentoKit/Components/OptionPicker.swift; sourceTree = "<group>"; };
 		C7E04546F6462327A478C67EC745EFAB /* NSObject+Intercepting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Intercepting.swift"; path = "ReactiveCocoa/NSObject+Intercepting.swift"; sourceTree = "<group>"; };
 		C9B4F7628DB0EFB8B2885E5A049FB174 /* UIResponder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIResponder.swift; path = ReactiveCocoa/UIKit/UIResponder.swift; sourceTree = "<group>"; };
-		CB4B83494C56578EEF0BE79A02058CC8 /* libFlexibleDiff.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFlexibleDiff.a; path = libFlexibleDiff.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA688205B279F79B6DE1F3E3FF762D98 /* Pods-BentoBear-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BentoBear-dummy.m"; sourceTree = "<group>"; };
 		CBB29934DDA1B640B8673AC04348F130 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Bento/Views/Box.swift; sourceTree = "<group>"; };
 		CBB8F5247F67236865A0E64BC337A9CF /* FocusCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FocusCoordinator.swift; path = Bento/Renderable/FocusCoordinator.swift; sourceTree = "<group>"; };
+		CDE94302ECBCE6AA02095D052567D2CE /* libReactiveSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactiveSwift.a; path = libReactiveSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7EBADECC51BB285B9D0903FE4389F6 /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIActivityIndicatorView.swift; path = ReactiveCocoa/UIKit/UIActivityIndicatorView.swift; sourceTree = "<group>"; };
 		D1659DE62CBC7EC68F6635FED735C17B /* Renderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Renderable.swift; path = Bento/Renderable/Renderable.swift; sourceTree = "<group>"; };
 		D17D911BCBDBFD7B9A2E6CB3DFF6B231 /* UIEdgeInsetsTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIEdgeInsetsTests.swift; path = BentoKit/BentoKit/Helpers/Extensions/UIEdgeInsetsTests.swift; sourceTree = "<group>"; };
@@ -538,8 +605,10 @@
 		D3D1BA14288E8369395445F525301A18 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = BentoKit/BentoKit/Components/Image.swift; sourceTree = "<group>"; };
 		D3FF184D8D9259DB28A7E3FD9D70DEED /* Atomic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Atomic.swift; path = Sources/Atomic.swift; sourceTree = "<group>"; };
 		D6533AA03564CAECD58BA0CB88D8F3C2 /* Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signal.swift; path = Sources/Signal.swift; sourceTree = "<group>"; };
+		D7BB68F84D5FDB40DA8D3F91DDBE1C07 /* Pods-BentoBearTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BentoBearTests-umbrella.h"; sourceTree = "<group>"; };
 		D8EE2BC7B2AD6A7BAF60A34FD97C3EDB /* InteractiveView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveView.swift; path = BentoKit/BentoKit/Views/InteractiveView.swift; sourceTree = "<group>"; };
 		DB24A0A2335977850F04DD25FD003B4E /* ObjC+Runtime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObjC+Runtime.swift"; path = "ReactiveCocoa/ObjC+Runtime.swift"; sourceTree = "<group>"; };
+		DBC0C4D74D76E1BBA9349015E76AF5BB /* Pods-BentoBearTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BentoBearTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DD02B4927A325FD73859FCA2E7F00E77 /* StyleSheets.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StyleSheets.modulemap; sourceTree = "<group>"; };
 		DE437C7B5898064566490F3E3BB1AE68 /* ReactiveCocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactiveCocoa.h; path = ReactiveCocoa/ReactiveCocoa.h; sourceTree = "<group>"; };
 		DEF287EF944A7B8A2056C9F4851AF2A1 /* NodeConstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeConstruction.swift; path = BentoKit/BentoKit/Helpers/NodeConstruction.swift; sourceTree = "<group>"; };
@@ -547,9 +616,7 @@
 		E25B81AD0773E63407BB510C0D31C8F9 /* ViewStyleSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewStyleSheet.swift; path = StyleSheets/StyleSheets/ViewStyleSheet.swift; sourceTree = "<group>"; };
 		E68678746BF65DED3911AB0C1423AAB5 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewExtensions.swift; path = Bento/Bento/UICollectionViewExtensions.swift; sourceTree = "<group>"; };
 		E84FA09FE52EF3FC2EEB009ED24562FE /* TextAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAlignment.swift; path = StyleSheets/StyleSheets/TextAlignment.swift; sourceTree = "<group>"; };
-		EA7E06CDF7049DD72563A5C6B209509B /* Pods-BentoBear.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BentoBear.modulemap"; sourceTree = "<group>"; };
 		EBCD2C101284B479C6AD7F099FF6522A /* TextBoundComputing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextBoundComputing.swift; path = StyleSheets/StyleSheets/TextBoundComputing.swift; sourceTree = "<group>"; };
-		ECB7FB49E58E382811B4D03C4BB14B5F /* Pods-BentoBear-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BentoBear-umbrella.h"; sourceTree = "<group>"; };
 		ED46BF25BEFD8994F00E1D495CBBA819 /* Supplement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Supplement.swift; path = Bento/Bento/Supplement.swift; sourceTree = "<group>"; };
 		EDFB55ACB4D2EBC696F596FF370364F3 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewExtensions.swift; path = Bento/Bento/UITableViewExtensions.swift; sourceTree = "<group>"; };
 		EF2A0A4D9289B7A22FA51C4668CF1835 /* DynamicProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicProperty.swift; path = ReactiveCocoa/DynamicProperty.swift; sourceTree = "<group>"; };
@@ -593,6 +660,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		257DEBC5924B3516F5714FAA2F40F3BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3712CBC672661DB27C3C95C277487117 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -644,6 +718,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B0341A0218AEBDF3E2B42D233CA9C7C /* Pods-BentoBear */ = {
+			isa = PBXGroup;
+			children = (
+				7939D9B3EBB803A151B01ED6E0757C86 /* Pods-BentoBear.modulemap */,
+				63BC82013F07DF60367B86DBF3EAAA2B /* Pods-BentoBear-acknowledgements.markdown */,
+				5B1D35A57540336292CB85FAAD40423B /* Pods-BentoBear-acknowledgements.plist */,
+				CA688205B279F79B6DE1F3E3FF762D98 /* Pods-BentoBear-dummy.m */,
+				643254FA4FD1BA8C1B34F4674D2617B8 /* Pods-BentoBear-resources.sh */,
+				908A982E7BEF9B10EDB6AAEB0FF5BE07 /* Pods-BentoBear-umbrella.h */,
+				C2D8034E1FDB23B1CB497CFFD2946D95 /* Pods-BentoBear.debug.xcconfig */,
+				AF7DF3070191FB3B0CA2838B1767AD43 /* Pods-BentoBear.release.xcconfig */,
+			);
+			name = "Pods-BentoBear";
+			path = "Target Support Files/Pods-BentoBear";
+			sourceTree = "<group>";
+		};
 		0EF21D251C1124F097F7B7E92A270246 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -670,20 +760,13 @@
 			path = "../Target Support Files/ReactiveFeedback";
 			sourceTree = "<group>";
 		};
-		544374EECE471AD198439DEAB96827AD /* Pods-BentoBear */ = {
+		5FE95F965B376560C52EE9B1B6D246FF /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EA7E06CDF7049DD72563A5C6B209509B /* Pods-BentoBear.modulemap */,
-				156F09CC9400A1D4547B15C61EF855FE /* Pods-BentoBear-acknowledgements.markdown */,
-				7FDA9C95EF856C14E6954A127A6887CC /* Pods-BentoBear-acknowledgements.plist */,
-				196E00ED36520DE28677937F01E7A4B8 /* Pods-BentoBear-dummy.m */,
-				08313D08BD3F67D170DB068251ED1CE5 /* Pods-BentoBear-resources.sh */,
-				ECB7FB49E58E382811B4D03C4BB14B5F /* Pods-BentoBear-umbrella.h */,
-				A62F8DB60C6748788B7D9625BBEEC984 /* Pods-BentoBear.debug.xcconfig */,
-				0C3221859252F809A3E9D4F78E058DF1 /* Pods-BentoBear.release.xcconfig */,
+				0B0341A0218AEBDF3E2B42D233CA9C7C /* Pods-BentoBear */,
+				CE04BEBC2EC0BCBF45FE56E3CF0397F5 /* Pods-BentoBearTests */,
 			);
-			name = "Pods-BentoBear";
-			path = "Target Support Files/Pods-BentoBear";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		60B7C0491FA21D2F15722AEC1BEFD264 /* FlexibleDiff */ = {
@@ -718,23 +801,6 @@
 			);
 			name = StyleSheets;
 			path = StyleSheets;
-			sourceTree = "<group>";
-		};
-		6C3F1830ADE64E17D4F7D08BBDF1ABF3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				74722111A8824455630B92BB54279C9B /* BentoKit.bundle */,
-				0EB7050EDD6A56FB76CDAD889D668C1F /* libBento.a */,
-				5EAAFED061302F5C668941D6AEEB92BB /* libBentoKit.a */,
-				CB4B83494C56578EEF0BE79A02058CC8 /* libFlexibleDiff.a */,
-				B6F393E3ECE96990A7A6F5EA3A85C7B4 /* libPods-BentoBear.a */,
-				74FDCCD9429B9E84DA4D903AD5187B73 /* libReactiveCocoa.a */,
-				319CA16617659DF7B19AB24C22938AFC /* libReactiveFeedback.a */,
-				16C09DE987A63DDDA126F4E63A658E5E /* libReactiveSwift.a */,
-				1690D17380CF38AA8953982CD6BEACAE /* libResult.a */,
-				311AE5D2BB3ED058752D6B631204C715 /* libStyleSheets.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		6D68D6F9987EB65C420C8C0D46F4A196 /* Bento */ = {
@@ -877,6 +943,24 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		7FDEE6FFDF24375781F119D9152DAD61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE42F03CC15DA3EC2AAFAF09565481DA /* BentoKit.bundle */,
+				22A161EE02266CA515EEC6506489D195 /* libBento.a */,
+				06765D761078D567540BFC36690F5AD6 /* libBentoKit.a */,
+				14AF1B56C791A260430EAEA32C7014C6 /* libFlexibleDiff.a */,
+				81A4E2BFE49155E4DE28F27416D6D6D4 /* libPods-BentoBear.a */,
+				6FCFF724C661C11BFE340418C2D72608 /* libPods-BentoBearTests.a */,
+				1DAD110481FDB4B4EDE82195B43C2027 /* libReactiveCocoa.a */,
+				A0E930255F522C0807A5C528377F196F /* libReactiveFeedback.a */,
+				CDE94302ECBCE6AA02095D052567D2CE /* libReactiveSwift.a */,
+				1D53A1A3EAC472E949DDACCDE3377E8C /* libResult.a */,
+				83419CDB5BA4D12CE0AB87CE6A070BF9 /* libStyleSheets.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8398706D57C568DD209A6EEC5C401163 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -921,14 +1005,6 @@
 			path = ReactiveSwift;
 			sourceTree = "<group>";
 		};
-		C3472096BDF1C989D38DE5F165BEA3BE /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				544374EECE471AD198439DEAB96827AD /* Pods-BentoBear */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		C4E522E426CE0586BBBCD60589FB42F7 /* Result */ = {
 			isa = PBXGroup;
 			children = (
@@ -955,14 +1031,30 @@
 			path = "../Target Support Files/ReactiveSwift";
 			sourceTree = "<group>";
 		};
+		CE04BEBC2EC0BCBF45FE56E3CF0397F5 /* Pods-BentoBearTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EEDF3AAD808C33BB13F9F7872DAE785 /* Pods-BentoBearTests.modulemap */,
+				DBC0C4D74D76E1BBA9349015E76AF5BB /* Pods-BentoBearTests-acknowledgements.markdown */,
+				056799E2B7A227AC0B336DBF7DEB77CC /* Pods-BentoBearTests-acknowledgements.plist */,
+				7A4764DD01AAD7C6E4265F75FF291560 /* Pods-BentoBearTests-dummy.m */,
+				82D691CDCA41CE04546000C28459417F /* Pods-BentoBearTests-resources.sh */,
+				D7BB68F84D5FDB40DA8D3F91DDBE1C07 /* Pods-BentoBearTests-umbrella.h */,
+				8ED3853FC064E7C2BDDB9933A6591074 /* Pods-BentoBearTests.debug.xcconfig */,
+				380E056A3480DFB95F5CD0D5252B85F8 /* Pods-BentoBearTests.release.xcconfig */,
+			);
+			name = "Pods-BentoBearTests";
+			path = "Target Support Files/Pods-BentoBearTests";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				E970CFD70CAAF972883BB121268DBC70 /* Pods */,
-				6C3F1830ADE64E17D4F7D08BBDF1ABF3 /* Products */,
-				C3472096BDF1C989D38DE5F165BEA3BE /* Targets Support Files */,
+				7FDEE6FFDF24375781F119D9152DAD61 /* Products */,
+				5FE95F965B376560C52EE9B1B6D246FF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1109,6 +1201,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		245576C5998858AD6F3FC66050BD5B78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88E779849ACAA40721CFB70C33222D9 /* Pods-BentoBearTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D59798486C9A695BA6C752FB9CEFA35 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1178,7 +1278,7 @@
 			);
 			name = ReactiveSwift;
 			productName = ReactiveSwift;
-			productReference = 16C09DE987A63DDDA126F4E63A658E5E /* libReactiveSwift.a */;
+			productReference = CDE94302ECBCE6AA02095D052567D2CE /* libReactiveSwift.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		4DF738292B1196CE7F09156875B83D7D /* Bento */ = {
@@ -1197,7 +1297,7 @@
 			);
 			name = Bento;
 			productName = Bento;
-			productReference = 0EB7050EDD6A56FB76CDAD889D668C1F /* libBento.a */;
+			productReference = 22A161EE02266CA515EEC6506489D195 /* libBento.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		60F9C2E8E0BC42DCC1B0B1B92845CE44 /* Pods-BentoBear */ = {
@@ -1222,7 +1322,7 @@
 			);
 			name = "Pods-BentoBear";
 			productName = "Pods-BentoBear";
-			productReference = B6F393E3ECE96990A7A6F5EA3A85C7B4 /* libPods-BentoBear.a */;
+			productReference = 81A4E2BFE49155E4DE28F27416D6D6D4 /* libPods-BentoBear.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		7652BB64A49F07A079D7A10F6FF01A2A /* StyleSheets */ = {
@@ -1240,7 +1340,7 @@
 			);
 			name = StyleSheets;
 			productName = StyleSheets;
-			productReference = 311AE5D2BB3ED058752D6B631204C715 /* libStyleSheets.a */;
+			productReference = 83419CDB5BA4D12CE0AB87CE6A070BF9 /* libStyleSheets.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		793BE856F948AF74A6A89C382B69C72A /* ReactiveCocoa */ = {
@@ -1259,7 +1359,7 @@
 			);
 			name = ReactiveCocoa;
 			productName = ReactiveCocoa;
-			productReference = 74FDCCD9429B9E84DA4D903AD5187B73 /* libReactiveCocoa.a */;
+			productReference = 1DAD110481FDB4B4EDE82195B43C2027 /* libReactiveCocoa.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		7D1F620B90C67EFF67C7B2CE0F5B7230 /* ReactiveFeedback */ = {
@@ -1278,7 +1378,7 @@
 			);
 			name = ReactiveFeedback;
 			productName = ReactiveFeedback;
-			productReference = 319CA16617659DF7B19AB24C22938AFC /* libReactiveFeedback.a */;
+			productReference = A0E930255F522C0807A5C528377F196F /* libReactiveFeedback.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A844132ECD92072B29C9EC6FBD6FCE59 /* BentoKit */ = {
@@ -1301,7 +1401,7 @@
 			);
 			name = BentoKit;
 			productName = BentoKit;
-			productReference = 5EAAFED061302F5C668941D6AEEB92BB /* libBentoKit.a */;
+			productReference = 06765D761078D567540BFC36690F5AD6 /* libBentoKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		BAADEED1627294303A411FCD2F854BE5 /* FlexibleDiff */ = {
@@ -1319,7 +1419,32 @@
 			);
 			name = FlexibleDiff;
 			productName = FlexibleDiff;
-			productReference = CB4B83494C56578EEF0BE79A02058CC8 /* libFlexibleDiff.a */;
+			productReference = 14AF1B56C791A260430EAEA32C7014C6 /* libFlexibleDiff.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CDB46F7D0F9E3953E7B0621AEF5B3E5D /* Pods-BentoBearTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80D8FA69CA51415B56953F96F5C28C1 /* Build configuration list for PBXNativeTarget "Pods-BentoBearTests" */;
+			buildPhases = (
+				245576C5998858AD6F3FC66050BD5B78 /* Headers */,
+				C9051C2C7CD95A9638B89501E094ACFB /* Sources */,
+				3712CBC672661DB27C3C95C277487117 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83EC09D3AE981A1FCABA01C5E1133CC1 /* PBXTargetDependency */,
+				3DCC4D1FA239FFACCB582B1401260AFF /* PBXTargetDependency */,
+				87249F91E03F1F10B4DF760689C0E0A2 /* PBXTargetDependency */,
+				6DEB892CFE450CD8CD80EEB48F8EC4B8 /* PBXTargetDependency */,
+				7035643C0B29EC73C5BA631AC007B3EA /* PBXTargetDependency */,
+				DD61AAF4DA56A70DA73FC7C5DD5F6AE2 /* PBXTargetDependency */,
+				E5C951349DEACB57D43FF080D0FF736C /* PBXTargetDependency */,
+				F4047A850354ABDBE5E68823E1B9F0AB /* PBXTargetDependency */,
+			);
+			name = "Pods-BentoBearTests";
+			productName = "Pods-BentoBearTests";
+			productReference = 6FCFF724C661C11BFE340418C2D72608 /* libPods-BentoBearTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D42BFF2F459944B30825ADBCD695829E /* BentoKit-BentoKit */ = {
@@ -1336,7 +1461,7 @@
 			);
 			name = "BentoKit-BentoKit";
 			productName = "BentoKit-BentoKit";
-			productReference = 74722111A8824455630B92BB54279C9B /* BentoKit.bundle */;
+			productReference = BE42F03CC15DA3EC2AAFAF09565481DA /* BentoKit.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		EBA6054FA58640CF494D0782ED645A6F /* Result */ = {
@@ -1354,7 +1479,7 @@
 			);
 			name = Result;
 			productName = Result;
-			productReference = 1690D17380CF38AA8953982CD6BEACAE /* libResult.a */;
+			productReference = 1D53A1A3EAC472E949DDACCDE3377E8C /* libResult.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -1374,7 +1499,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6C3F1830ADE64E17D4F7D08BBDF1ABF3 /* Products */;
+			productRefGroup = 7FDEE6FFDF24375781F119D9152DAD61 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1383,6 +1508,7 @@
 				D42BFF2F459944B30825ADBCD695829E /* BentoKit-BentoKit */,
 				BAADEED1627294303A411FCD2F854BE5 /* FlexibleDiff */,
 				60F9C2E8E0BC42DCC1B0B1B92845CE44 /* Pods-BentoBear */,
+				CDB46F7D0F9E3953E7B0621AEF5B3E5D /* Pods-BentoBearTests */,
 				793BE856F948AF74A6A89C382B69C72A /* ReactiveCocoa */,
 				7D1F620B90C67EFF67C7B2CE0F5B7230 /* ReactiveFeedback */,
 				2B5023FB8617950D251C0367821C2E89 /* ReactiveSwift */,
@@ -1803,6 +1929,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9051C2C7CD95A9638B89501E094ACFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E97E5519E11EC86BC5756261459BC85F /* Pods-BentoBearTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC9BD216ED4F6065BE8CD6037C123B63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1881,6 +2015,12 @@
 			target = 2B5023FB8617950D251C0367821C2E89 /* ReactiveSwift */;
 			targetProxy = 50D41144B1F258A061C657D88343928D /* PBXContainerItemProxy */;
 		};
+		3DCC4D1FA239FFACCB582B1401260AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BentoKit;
+			target = A844132ECD92072B29C9EC6FBD6FCE59 /* BentoKit */;
+			targetProxy = A2F00279B907A8C668B5178AA63D29E6 /* PBXContainerItemProxy */;
+		};
 		5AF4730DBB8EFEA031BCCDBAB41C2DC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ReactiveSwift;
@@ -1892,6 +2032,18 @@
 			name = BentoKit;
 			target = A844132ECD92072B29C9EC6FBD6FCE59 /* BentoKit */;
 			targetProxy = 740D742DB16D2A8120E48627086AD148 /* PBXContainerItemProxy */;
+		};
+		6DEB892CFE450CD8CD80EEB48F8EC4B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReactiveCocoa;
+			target = 793BE856F948AF74A6A89C382B69C72A /* ReactiveCocoa */;
+			targetProxy = D7CC8991DF6B5B0CD2C018B7FD4598AE /* PBXContainerItemProxy */;
+		};
+		7035643C0B29EC73C5BA631AC007B3EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReactiveFeedback;
+			target = 7D1F620B90C67EFF67C7B2CE0F5B7230 /* ReactiveFeedback */;
+			targetProxy = 443AED6E8073A26C5FFB1E4C24B3FBE9 /* PBXContainerItemProxy */;
 		};
 		71DD6762E250F9A6CEA05ADC8C148FDD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1910,6 +2062,18 @@
 			name = Result;
 			target = EBA6054FA58640CF494D0782ED645A6F /* Result */;
 			targetProxy = 5D84BA924C436EB1A7BEDEA5753BF748 /* PBXContainerItemProxy */;
+		};
+		83EC09D3AE981A1FCABA01C5E1133CC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bento;
+			target = 4DF738292B1196CE7F09156875B83D7D /* Bento */;
+			targetProxy = 999B77B317DBAD59ECAC64DCE8C77050 /* PBXContainerItemProxy */;
+		};
+		87249F91E03F1F10B4DF760689C0E0A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlexibleDiff;
+			target = BAADEED1627294303A411FCD2F854BE5 /* FlexibleDiff */;
+			targetProxy = D017195153B6A313737B17560F025AC6 /* PBXContainerItemProxy */;
 		};
 		8826075B769A4C987E617FCBC2BBBB7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1946,6 +2110,24 @@
 			name = ReactiveCocoa;
 			target = 793BE856F948AF74A6A89C382B69C72A /* ReactiveCocoa */;
 			targetProxy = 0E8E3F9910E65DD750F62C7B52585A38 /* PBXContainerItemProxy */;
+		};
+		DD61AAF4DA56A70DA73FC7C5DD5F6AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReactiveSwift;
+			target = 2B5023FB8617950D251C0367821C2E89 /* ReactiveSwift */;
+			targetProxy = 6F26761A522EB4276CC5448A46AC2B0E /* PBXContainerItemProxy */;
+		};
+		E5C951349DEACB57D43FF080D0FF736C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = EBA6054FA58640CF494D0782ED645A6F /* Result */;
+			targetProxy = 68A20C4C2039A5D2446BCB430446CC3E /* PBXContainerItemProxy */;
+		};
+		F4047A850354ABDBE5E68823E1B9F0AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StyleSheets;
+			target = 7652BB64A49F07A079D7A10F6FF01A2A /* StyleSheets */;
+			targetProxy = 09DB2855258CE39610C48784210AA8A6 /* PBXContainerItemProxy */;
 		};
 		F859295BB55A9359BCA73497A6221544 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2155,7 +2337,7 @@
 		};
 		3C4DCA5851B8C05817583C1D107BC320 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C3221859252F809A3E9D4F78E058DF1 /* Pods-BentoBear.release.xcconfig */;
+			baseConfigurationReference = AF7DF3070191FB3B0CA2838B1767AD43 /* Pods-BentoBear.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2204,7 +2386,7 @@
 		};
 		47A8EFF0F13AD7B2DC819F0CC5E4E8E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A62F8DB60C6748788B7D9625BBEEC984 /* Pods-BentoBear.debug.xcconfig */;
+			baseConfigurationReference = C2D8034E1FDB23B1CB497CFFD2946D95 /* Pods-BentoBear.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2320,6 +2502,29 @@
 			};
 			name = Release;
 		};
+		6DBA6C22662A7A7D74F819C5E4104C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED3853FC064E7C2BDDB9933A6591074 /* Pods-BentoBearTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BentoBearTests/Pods-BentoBearTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		7793E1B085D2961323D4AC91D2D70008 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C5A004B7D458D00C247E94ADEAADC60 /* BentoKit.xcconfig */;
@@ -2371,6 +2576,30 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		91FF95878AB3A7BCE271D7015AC63182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 380E056A3480DFB95F5CD0D5252B85F8 /* Pods-BentoBearTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BentoBearTests/Pods-BentoBearTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		9393159FB961441F1FC5BD6EB53A69AA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2639,6 +2868,15 @@
 			buildConfigurations = (
 				B30D5D5FDC5544739AFED9816DADA417 /* Debug */,
 				E2C6795813054EF448F879A5E4385237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80D8FA69CA51415B56953F96F5C28C1 /* Build configuration list for PBXNativeTarget "Pods-BentoBearTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DBA6C22662A7A7D74F819C5E4104C18 /* Debug */,
+				91FF95878AB3A7BCE271D7015AC63182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

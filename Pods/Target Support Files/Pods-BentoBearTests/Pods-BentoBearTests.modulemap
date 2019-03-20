@@ -1,0 +1,6 @@
+module Pods_BentoBearTests {
+  umbrella header "Pods-BentoBearTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
