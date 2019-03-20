@@ -10,3 +10,4 @@
 "PostList.UpdateButton" = "Update";
 "PostDownloaderErrors.NetworkError.Title" = "Network error";
 "PostDownloaderErrors.NetworkError.Message" = "Unable to download posts";
+"User.NameUnknown" = "Unnamed";

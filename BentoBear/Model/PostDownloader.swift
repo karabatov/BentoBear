@@ -41,16 +41,22 @@ final class PostDownloaderSaving: PostDownloader {
     }
 
     func downloadPosts(overwriteExisting: Bool) -> SignalProducer<[Post], PostDownloaderError> {
-        return netData.fetchData(from: "http://jsonplaceholder.typicode.com/posts")
-            .attemptMap({ (data: Data) -> Result<[Post], NetworkDataError> in
+        let allData = SignalProducer.combineLatest(
+            netData.fetchData(from: "http://jsonplaceholder.typicode.com/posts"),
+            netData.fetchData(from: "http://jsonplaceholder.typicode.com/users"),
+            netData.fetchData(from: "http://jsonplaceholder.typicode.com/comments")
+        )
+
+        return allData
+            .attemptMap { [weak self] posts, users, comments -> Result<[Post], NetworkDataError> in
                 do {
                     let posts = try JSONDecoder().decode([Post].self, from: data)
-                    self.store.saveOnDevice(posts: posts, overwrite: true)
-                    return Result(value: self.store.loadAllOnDevice())
+                    self?.store.saveOnDevice(posts: posts, overwrite: true)
+                    return Result(value: self?.store.loadAllOnDevice() ?? [])
                 } catch {
                     return Result(error: NetworkDataError.networkError)
                 }
-            })
+            }
             .mapError { _ in PostDownloaderError.networkError }
     }
 }
