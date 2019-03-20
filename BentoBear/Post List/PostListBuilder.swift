@@ -21,7 +21,7 @@ struct PostListBuilder: PostListChildBuilders {
         self.postDetailBuilder = postDetailBuilder
     }
 
-    func make() -> UIViewController {
+    func make(nav: UINavigationController?) -> UIViewController {
         let postStore = PostStoreDefaults()
         let viewModel = PostListViewModel(
             store: postStore,
@@ -34,6 +34,8 @@ struct PostListBuilder: PostListChildBuilders {
             rendererConfig: PostListRenderer.Config(),
             appearance: Property.init(value: PostListRenderer.Appearance())
         )
+
+        nav?.setViewControllers([viewController], animated: false)
 
         let flowController = PostListFlowController(
             presentationFlow: viewController.navigationFlow,
