@@ -1,5 +1,5 @@
 //
-//  ReduceError.swift
+//  ReplaceError.swift
 //  BentoBear
 //
 //  Created by Yuri Karabatov on 19/03/2019.

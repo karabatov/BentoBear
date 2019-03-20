@@ -6,7 +6,12 @@
 //  Copyright © 2019 Yuri Karabatov. All rights reserved.
 //
 
-/*
+/*  This was an initial attempt at a single protocol to create
+    more uniform view models. Turns out, currently it's impossible
+    to define generic type constraints in an extension, because
+    it makes both the compiler and SourceKit hang. Below is the
+    protocol code, and below that, an isolated test case with simple
+    types which you can try out for yourself.
 
 import Foundation
 import BentoKit
@@ -122,6 +127,7 @@ class LevelThree<TypeThree: Equatable>: LevelTwo {
     }
 }
 
+/// This make Swift hang.
 final class LevelFour: LevelThree<LevelFour.TypeFour> {
 }
 

@@ -14,7 +14,7 @@
 		D1130BEE224150DD00C7BC63 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1130BED224150DD00C7BC63 /* LocalizedString.swift */; };
 		D1130BF02241581300C7BC63 /* PostListFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1130BEF2241581300C7BC63 /* PostListFlowController.swift */; };
 		D1130BF22241587C00C7BC63 /* PostListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1130BF12241587C00C7BC63 /* PostListBuilder.swift */; };
-		D1130BF5224168D700C7BC63 /* ReduceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1130BF4224168D700C7BC63 /* ReduceError.swift */; };
+		D1130BF5224168D700C7BC63 /* ReplaceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1130BF4224168D700C7BC63 /* ReplaceError.swift */; };
 		D1130BF722416C6C00C7BC63 /* UserFacingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1130BF622416C6C00C7BC63 /* UserFacingError.swift */; };
 		D1130BF92242582300C7BC63 /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1130BF82242582300C7BC63 /* Apply.swift */; };
 		D18276962240154A008C2A34 /* AresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18276952240154A008C2A34 /* AresViewModel.swift */; };
@@ -26,6 +26,7 @@
 		D1AF93FC2242A9AE007D0799 /* PostDetailRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF93FB2242A9AE007D0799 /* PostDetailRenderer.swift */; };
 		D1AF93FE2242DC7D007D0799 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = D1AF93FD2242DC7D007D0799 /* Localizable.stringsdict */; };
 		D1AF94072242E1B0007D0799 /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF94062242E1B0007D0799 /* PostListViewModelTests.swift */; };
+		D1AF94112243095F007D0799 /* ReplaceErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF94102243095F007D0799 /* ReplaceErrorTests.swift */; };
 		D1CC42202239903E0062DED7 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421F2239903E0062DED7 /* Flow.swift */; };
 		D1E0ABE3223FF0A000AC5A93 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E0ABE2223FF0A000AC5A93 /* PostListViewModel.swift */; };
 		D1E0ABE6223FF73F00AC5A93 /* PostUserComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E0ABE5223FF73F00AC5A93 /* PostUserComment.swift */; };
@@ -54,7 +55,7 @@
 		D1130BED224150DD00C7BC63 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		D1130BEF2241581300C7BC63 /* PostListFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListFlowController.swift; sourceTree = "<group>"; };
 		D1130BF12241587C00C7BC63 /* PostListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListBuilder.swift; sourceTree = "<group>"; };
-		D1130BF4224168D700C7BC63 /* ReduceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceError.swift; sourceTree = "<group>"; };
+		D1130BF4224168D700C7BC63 /* ReplaceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceError.swift; sourceTree = "<group>"; };
 		D1130BF622416C6C00C7BC63 /* UserFacingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFacingError.swift; sourceTree = "<group>"; };
 		D1130BF82242582300C7BC63 /* Apply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apply.swift; sourceTree = "<group>"; };
 		D18276952240154A008C2A34 /* AresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AresViewModel.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		D1AF94042242E1B0007D0799 /* BentoBearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BentoBearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AF94062242E1B0007D0799 /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
 		D1AF94082242E1B0007D0799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AF94102243095F007D0799 /* ReplaceErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceErrorTests.swift; sourceTree = "<group>"; };
 		D1CC421F2239903E0062DED7 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		D1E0ABE2223FF0A000AC5A93 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		D1E0ABE5223FF73F00AC5A93 /* PostUserComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserComment.swift; sourceTree = "<group>"; };
@@ -126,7 +128,7 @@
 				D1CC421F2239903E0062DED7 /* Flow.swift */,
 				D18276952240154A008C2A34 /* AresViewModel.swift */,
 				D1130BED224150DD00C7BC63 /* LocalizedString.swift */,
-				D1130BF4224168D700C7BC63 /* ReduceError.swift */,
+				D1130BF4224168D700C7BC63 /* ReplaceError.swift */,
 				D1130BF622416C6C00C7BC63 /* UserFacingError.swift */,
 				D1130BF82242582300C7BC63 /* Apply.swift */,
 			);
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				D1AF94062242E1B0007D0799 /* PostListViewModelTests.swift */,
+				D1AF94102243095F007D0799 /* ReplaceErrorTests.swift */,
 				D1AF94082242E1B0007D0799 /* Info.plist */,
 			);
 			path = BentoBearTests;
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1AF94072242E1B0007D0799 /* PostListViewModelTests.swift in Sources */,
+				D1AF94112243095F007D0799 /* ReplaceErrorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +427,7 @@
 				D1AF93F82242952C007D0799 /* PostDetailBuilder.swift in Sources */,
 				D1130BF92242582300C7BC63 /* Apply.swift in Sources */,
 				D1AF93F52242620F007D0799 /* NetworkData.swift in Sources */,
-				D1130BF5224168D700C7BC63 /* ReduceError.swift in Sources */,
+				D1130BF5224168D700C7BC63 /* ReplaceError.swift in Sources */,
 				D18276982240441C008C2A34 /* PostStore.swift in Sources */,
 				D1130BF22241587C00C7BC63 /* PostListBuilder.swift in Sources */,
 				D182769A22404C5C008C2A34 /* PostDownloader.swift in Sources */,
