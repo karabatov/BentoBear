@@ -46,3 +46,17 @@ struct RichPost: Equatable {
     let post: Post
     let comments: [Comment]
 }
+
+extension RichPost {
+    /// Take up to first seven words of the first line to display as excerpt.
+    func bodyExcerpt() -> String {
+        let firstLine = post.body
+            .split(separator: "\n")
+            .first ?? ""
+        return firstLine
+            .split(separator: " ")
+            .prefix(7)
+            .joined(separator: " ")
+            + "…"
+    }
+}

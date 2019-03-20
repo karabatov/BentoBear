@@ -56,6 +56,7 @@ struct PostListRenderer: BoxRenderer {
             title: ("PostList.Title").localized(),
             rightBarItems: rightBarItems,
             formStyle: .centerYAligned,
+            shouldUseSystemSeparators: false,
             box: Box.empty
                 |-+ Section(id: SectionID.empty)
                 |---+ Node(
@@ -75,18 +76,10 @@ struct PostListRenderer: BoxRenderer {
             box: Box.empty
                 |-+ Section(id: SectionID.posts)
                 |---* posts.map { post in
-                    let firstLine = post.post.body
-                        .split(separator: "\n")
-                        .first ?? ""
-                    /// Take first seven words of the first line.
-                    let cutBody = firstLine
-                        .split(separator: " ")
-                        .prefix(7)
-                        .joined(separator: " ")
-                    return Node(
+                    Node(
                         id: RowID.post,
                         component: Component.TitledDescription(
-                            texts: [.plain(post.post.title), .plain(cutBody + "…")],
+                            texts: [.plain(post.post.title), .plain(post.bodyExcerpt())],
                             detail: nil,
                             accessory: .chevron,
                             didTap: .selectedPost(post) >>> observer,
