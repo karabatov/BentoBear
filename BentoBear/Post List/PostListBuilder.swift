@@ -39,7 +39,7 @@ struct PostListBuilder: PostListChildBuilders {
 
         let flowController = PostListFlowController(
             presentationFlow: viewController.navigationFlow,
-            presenting: viewController.navigationFlow,
+            presenting: viewController.modalFlow,
             builders: self
         )
 

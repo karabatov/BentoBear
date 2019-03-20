@@ -24,6 +24,13 @@ final class PostListFlowController {
         case .showPost(let post):
             builders.makePostDetail(presenting: presentationFlow, post: post)
                 |> presentationFlow.present
+
+        case .showError(let error):
+            let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
+            let action = UIAlertAction(title: "Common.OK".localized(), style: .default, handler: nil)
+            alert.addAction(action)
+
+            alert |> presenting.present
         }
     }
 }

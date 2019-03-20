@@ -84,9 +84,12 @@ final class PostListViewModel: BoxViewModel {
     }
 
     private static func makeRoute(_ state: State) -> Route? {
-        switch state.posts {
-        case .showing(_, selected: let post) where post != nil:
+        switch (state.posts, state.loading) {
+        case (.showing(_, selected: let post), _) where post != nil:
             return .showPost(post!)
+
+        case (_, .error(let error)):
+            return .showError(error)
 
         default:
             return nil
@@ -175,5 +178,6 @@ extension PostListViewModel {
 
     enum Route {
         case showPost(RichPost)
+        case showError(UserFacingError)
     }
 }
