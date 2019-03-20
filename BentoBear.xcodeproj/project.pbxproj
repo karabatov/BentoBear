@@ -15,6 +15,7 @@
 		D1130BF22241587C00C7BC63 /* PostListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1130BF12241587C00C7BC63 /* PostListBuilder.swift */; };
 		D1130BF5224168D700C7BC63 /* ReduceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1130BF4224168D700C7BC63 /* ReduceError.swift */; };
 		D1130BF722416C6C00C7BC63 /* UserFacingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1130BF622416C6C00C7BC63 /* UserFacingError.swift */; };
+		D1130BF92242582300C7BC63 /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1130BF82242582300C7BC63 /* Apply.swift */; };
 		D18276962240154A008C2A34 /* AresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18276952240154A008C2A34 /* AresViewModel.swift */; };
 		D18276982240441C008C2A34 /* PostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18276972240441C008C2A34 /* PostStore.swift */; };
 		D182769A22404C5C008C2A34 /* PostDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D182769922404C5C008C2A34 /* PostDownloader.swift */; };
@@ -36,6 +37,7 @@
 		D1130BF12241587C00C7BC63 /* PostListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListBuilder.swift; sourceTree = "<group>"; };
 		D1130BF4224168D700C7BC63 /* ReduceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceError.swift; sourceTree = "<group>"; };
 		D1130BF622416C6C00C7BC63 /* UserFacingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFacingError.swift; sourceTree = "<group>"; };
+		D1130BF82242582300C7BC63 /* Apply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apply.swift; sourceTree = "<group>"; };
 		D18276952240154A008C2A34 /* AresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AresViewModel.swift; sourceTree = "<group>"; };
 		D18276972240441C008C2A34 /* PostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStore.swift; sourceTree = "<group>"; };
 		D182769922404C5C008C2A34 /* PostDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDownloader.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				D1130BED224150DD00C7BC63 /* LocalizedString.swift */,
 				D1130BF4224168D700C7BC63 /* ReduceError.swift */,
 				D1130BF622416C6C00C7BC63 /* UserFacingError.swift */,
+				D1130BF82242582300C7BC63 /* Apply.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				D1E0ABE3223FF0A000AC5A93 /* PostListViewModel.swift in Sources */,
 				D1130BEE224150DD00C7BC63 /* LocalizedString.swift in Sources */,
+				D1130BF92242582300C7BC63 /* Apply.swift in Sources */,
 				D1130BF5224168D700C7BC63 /* ReduceError.swift in Sources */,
 				D18276982240441C008C2A34 /* PostStore.swift in Sources */,
 				D1130BF22241587C00C7BC63 /* PostListBuilder.swift in Sources */,

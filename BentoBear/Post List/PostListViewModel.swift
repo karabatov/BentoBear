@@ -141,7 +141,7 @@ extension PostListViewModel {
     }
 
     enum Action: Equatable {
-        case selectedPost(index: Int)
+        case selectedPost(Post)
         case updateTapped
     }
 

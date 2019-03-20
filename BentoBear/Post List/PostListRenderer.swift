@@ -30,7 +30,7 @@ struct PostListRenderer: BoxRenderer {
         updateButton = BarButtonItem(
             appearance: .text("PostList.UpdateButton".localized()),
             accessibilityIdentifier: "PostList.UpdateButton".localized(),
-            callback: { observer(.updateTapped) }
+            callback: .updateTapped >>> observer
         )
     }
 
@@ -81,6 +81,7 @@ struct PostListRenderer: BoxRenderer {
                             texts: [.plain(post.title), .plain(String(post.body.prefix(50)))],
                             detail: nil,
                             accessory: .chevron,
+                            didTap: .selectedPost(post) >>> observer,
                             styleSheet: Component.TitledDescription.StyleSheet()
                                 .compose(\.textStyles[0].textColor, UIColor.darkText)
                         )
