@@ -24,6 +24,12 @@ protocol Flow {
     func dismiss(_ animated: Bool)
 }
 
+extension Flow {
+    func present(_ viewController: UIViewController) {
+        present(viewController, animated: true)
+    }
+}
+
 private struct ModalFlow: Flow {
     private let origin: UIViewController
 

@@ -11,16 +11,19 @@ import UIKit
 final class PostListFlowController {
     private let presentationFlow: Flow
     private let presenting: Flow
+    private let builders: PostListChildBuilders
 
-    init(presentationFlow: Flow, presenting: Flow) {
+    init(presentationFlow: Flow, presenting: Flow, builders: PostListChildBuilders) {
         self.presentationFlow = presentationFlow
         self.presenting = presenting
+        self.builders = builders
     }
 
     func handle(_ route: PostListViewModel.Route) {
         switch route {
-        case .showPost(_):
-            break
+        case .showPost(let post):
+            builders.makePostDetail(presenting: presentationFlow, post: post)
+                |> presentationFlow.present
         }
     }
 }

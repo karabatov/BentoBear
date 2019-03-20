@@ -10,7 +10,17 @@ import UIKit
 import BentoKit
 import ReactiveSwift
 
-struct PostListBuilder {
+protocol PostListChildBuilders {
+    func makePostDetail(presenting: Flow, post: RichPost) -> UIViewController
+}
+
+struct PostListBuilder: PostListChildBuilders {
+    private let postDetailBuilder: PostDetailBuilder
+
+    init(postDetailBuilder: PostDetailBuilder) {
+        self.postDetailBuilder = postDetailBuilder
+    }
+
     func make() -> UIViewController {
         let postStore = PostStoreDefaults()
         let viewModel = PostListViewModel(
@@ -27,7 +37,8 @@ struct PostListBuilder {
 
         let flowController = PostListFlowController(
             presentationFlow: viewController.navigationFlow,
-            presenting: viewController.navigationFlow
+            presenting: viewController.navigationFlow,
+            builders: self
         )
 
         viewModel.routes
@@ -35,5 +46,9 @@ struct PostListBuilder {
             .observeValues(flowController.handle)
 
         return viewController
+    }
+
+    func makePostDetail(presenting: Flow, post: RichPost) -> UIViewController {
+        return postDetailBuilder.make()
     }
 }

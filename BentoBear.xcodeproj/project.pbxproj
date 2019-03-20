@@ -20,6 +20,7 @@
 		D18276982240441C008C2A34 /* PostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18276972240441C008C2A34 /* PostStore.swift */; };
 		D182769A22404C5C008C2A34 /* PostDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D182769922404C5C008C2A34 /* PostDownloader.swift */; };
 		D1AF93F52242620F007D0799 /* NetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF93F42242620F007D0799 /* NetworkData.swift */; };
+		D1AF93F82242952C007D0799 /* PostDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF93F72242952C007D0799 /* PostDetailBuilder.swift */; };
 		D1CC42202239903E0062DED7 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC421F2239903E0062DED7 /* Flow.swift */; };
 		D1E0ABE3223FF0A000AC5A93 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E0ABE2223FF0A000AC5A93 /* PostListViewModel.swift */; };
 		D1E0ABE6223FF73F00AC5A93 /* PostUserComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E0ABE5223FF73F00AC5A93 /* PostUserComment.swift */; };
@@ -43,6 +44,7 @@
 		D18276972240441C008C2A34 /* PostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStore.swift; sourceTree = "<group>"; };
 		D182769922404C5C008C2A34 /* PostDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDownloader.swift; sourceTree = "<group>"; };
 		D1AF93F42242620F007D0799 /* NetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkData.swift; sourceTree = "<group>"; };
+		D1AF93F72242952C007D0799 /* PostDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailBuilder.swift; sourceTree = "<group>"; };
 		D1CC421F2239903E0062DED7 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		D1E0ABE2223FF0A000AC5A93 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		D1E0ABE5223FF73F00AC5A93 /* PostUserComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserComment.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		D1AF93F622429506007D0799 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF93F72242952C007D0799 /* PostDetailBuilder.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
 		D1E0ABE1223FF07C00AC5A93 /* Post List */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 				D1130BF322415AD400C7BC63 /* Helpers */,
 				D1E0ABE4223FF72300AC5A93 /* Model */,
 				D1E0ABE1223FF07C00AC5A93 /* Post List */,
+				D1AF93F622429506007D0799 /* PostDetail */,
 				D1FF79CD2238009000DEF677 /* Assets.xcassets */,
 				D1FF79CF2238009000DEF677 /* LaunchScreen.storyboard */,
 				D1FF79D22238009000DEF677 /* Info.plist */,
@@ -273,6 +284,7 @@
 			files = (
 				D1E0ABE3223FF0A000AC5A93 /* PostListViewModel.swift in Sources */,
 				D1130BEE224150DD00C7BC63 /* LocalizedString.swift in Sources */,
+				D1AF93F82242952C007D0799 /* PostDetailBuilder.swift in Sources */,
 				D1130BF92242582300C7BC63 /* Apply.swift in Sources */,
 				D1AF93F52242620F007D0799 /* NetworkData.swift in Sources */,
 				D1130BF5224168D700C7BC63 /* ReduceError.swift in Sources */,

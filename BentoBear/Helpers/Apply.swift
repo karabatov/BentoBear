@@ -17,3 +17,9 @@ infix operator >>>: CompositionPrecedence
 func >>> <T>(lhs: T, rhs: @escaping (T) -> Void) -> () -> Void {
     return { rhs(lhs) }
 }
+
+infix operator |>: CompositionPrecedence
+
+func |> <T>(lhs: T, rhs: @escaping (T) -> Void) {
+    rhs(lhs)
+}
