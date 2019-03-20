@@ -57,7 +57,7 @@ struct PostListRenderer: BoxRenderer {
             rightBarItems: rightBarItems,
             formStyle: .centerYAligned,
             box: Box.empty
-                |-+ Section(id: SectionID.posts)
+                |-+ Section(id: SectionID.empty)
                 |---+ Node(
                     id: RowID.noPostsMessage,
                     component: Component.Description(
@@ -99,6 +99,7 @@ extension PostListRenderer {
     }
 
     enum SectionID: Hashable {
+        case empty
         case posts
     }
 
