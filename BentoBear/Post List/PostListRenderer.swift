@@ -46,7 +46,7 @@ struct PostListRenderer: BoxRenderer {
         switch state.posts {
         case .empty:
             return renderEmpty(rightBarItems: rightBarItems)
-        case .showing(let posts):
+        case .showing(let posts, selected: _):
             return renderPosts(posts, rightBarItems: rightBarItems)
         }
     }

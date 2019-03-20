@@ -41,7 +41,7 @@ final class PostListViewModel: BoxViewModel {
         switch (state.posts, state.loading, event) {
         // Initial state, posts have been loaded (from disk).
         case (.empty, .idle, .loadedPosts(let posts)):
-            return State(posts: .showing(posts), loading: .idle)
+            return State(posts: .showing(posts, selected: nil), loading: .idle)
 
         // We have signaled to start downloading, no matter if we have posts or not.
         case (let posts, .idle, .startDownloadingPosts):
@@ -57,7 +57,7 @@ final class PostListViewModel: BoxViewModel {
             if posts.isEmpty {
                 postState = .empty
             } else {
-                postState = .showing(posts)
+                postState = .showing(posts, selected: nil)
             }
             return State(posts: postState, loading: .idle)
 
@@ -69,13 +69,27 @@ final class PostListViewModel: BoxViewModel {
         case (let posts, .error(_), _):
             return State(posts: posts, loading: .idle)
 
+        // A post has been selected.
+        case (.showing(let posts, selected: _), let loading, .ui(.selectedPost(let post))):
+            return State(posts: .showing(posts, selected: post), loading: loading)
+
+        // Deselect a post after it has been selected.
+        case (.showing(let posts, selected: let post), let loading, _) where post != nil:
+            return State(posts: .showing(posts, selected: nil), loading: loading)
+
         default:
             return state
         }
     }
 
     private static func makeRoute(_ state: State) -> Route? {
-        return nil
+        switch state.posts {
+        case .showing(_, selected: let post) where post != nil:
+            return .showPost(post!)
+
+        default:
+            return nil
+        }
     }
 }
 
@@ -119,7 +133,7 @@ extension PostListViewModel {
 extension PostListViewModel {
     enum PostsState: Equatable {
         case empty
-        case showing([RichPost])
+        case showing([RichPost], selected: RichPost?)
     }
 
     enum LoadingState: Equatable {
