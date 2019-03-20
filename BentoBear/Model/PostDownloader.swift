@@ -28,7 +28,7 @@ extension PostDownloaderError: UserFacingErrorConvertible {
 
 protocol PostDownloader {
     /// Downloads posts, saves them and returns all posts from the store.
-    func downloadPosts(overwriteExisting: Bool) -> SignalProducer<[Post], PostDownloaderError>
+    func downloadPosts(overwriteExisting: Bool) -> SignalProducer<[RichPost], PostDownloaderError>
 }
 
 final class PostDownloaderSaving: PostDownloader {
@@ -40,23 +40,44 @@ final class PostDownloaderSaving: PostDownloader {
         self.netData = downloadWith
     }
 
-    func downloadPosts(overwriteExisting: Bool) -> SignalProducer<[Post], PostDownloaderError> {
-        let allData = SignalProducer.combineLatest(
-            netData.fetchData(from: "http://jsonplaceholder.typicode.com/posts"),
-            netData.fetchData(from: "http://jsonplaceholder.typicode.com/users"),
-            netData.fetchData(from: "http://jsonplaceholder.typicode.com/comments")
-        )
-
-        return allData
-            .attemptMap { [weak self] posts, users, comments -> Result<[Post], NetworkDataError> in
-                do {
-                    let posts = try JSONDecoder().decode([Post].self, from: data)
-                    self?.store.saveOnDevice(posts: posts, overwrite: true)
-                    return Result(value: self?.store.loadAllOnDevice() ?? [])
-                } catch {
-                    return Result(error: NetworkDataError.networkError)
-                }
-            }
+    func downloadPosts(overwriteExisting: Bool) -> SignalProducer<[RichPost], PostDownloaderError> {
+        let newUsers = netData.fetchData(from: "http://jsonplaceholder.typicode.com/users")
             .mapError { _ in PostDownloaderError.networkError }
+            .attemptMap { PostDownloaderSaving.tryMapping(data: $0, toType: [User].self) }
+
+        let newComments = netData.fetchData(from: "http://jsonplaceholder.typicode.com/comments")
+            .mapError { _ in PostDownloaderError.networkError }
+            .attemptMap { PostDownloaderSaving.tryMapping(data: $0, toType: [Comment].self) }
+
+        let newPosts = netData.fetchData(from: "http://jsonplaceholder.typicode.com/posts")
+            .mapError { _ in PostDownloaderError.networkError }
+            .attemptMap { PostDownloaderSaving.tryMapping(data: $0, toType: [Post].self) }
+
+        return SignalProducer.combineLatest(newUsers, newComments, newPosts)
+            .flatMap(.latest) { [weak self] users, comments, posts -> SignalProducer<[Void], PostDownloaderError> in
+                guard let strongSelf = self else { return .empty }
+
+                return strongSelf.store.saveOnDevice(users: users, overwrite: true)
+                    .merge(with: strongSelf.store.saveOnDevice(comments: comments, overwrite: true))
+                    .merge(with: strongSelf.store.saveOnDevice(posts: posts, overwrite: true))
+                    .mapError { _ in PostDownloaderError.networkError }
+                    .collect()
+            }
+            .attemptMap { [weak self] voids -> Result<[RichPost], PostDownloaderError> in
+                guard voids.count == 3 else {
+                    return Result(error: .networkError)
+                }
+
+                return Result(value: self?.store.loadAllOnDevice() ?? [])
+            }
+    }
+
+    static func tryMapping<T: Decodable>(data: Data, toType: T.Type) -> Result<T, PostDownloaderError> {
+        do {
+            let decoded = try JSONDecoder().decode(toType, from: data)
+            return Result(value: decoded)
+        } catch {
+            return Result(error: .networkError)
+        }
     }
 }
