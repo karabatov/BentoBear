@@ -35,6 +35,8 @@ struct PostListBuilder: PostListChildBuilders {
             appearance: Property.init(value: PostListRenderer.Appearance())
         )
 
+        // I deemed this necessary, because it's a root controller, and
+        // you can't get `navigationFlow` without the VC being in one.
         nav?.setViewControllers([viewController], animated: false)
 
         let flowController = PostListFlowController(

@@ -11,6 +11,7 @@ import ReactiveSwift
 import Result
 
 extension SignalProducer {
+    /// Convert a `SignalProducer<Value, Error>` into `SignalProducer<Value, NoError>`.
     func replaceError(_ transform: @escaping (Error) -> Value) -> SignalProducer<Value, NoError> {
         return flatMapError { error -> SignalProducer<Value, NoError> in
             SignalProducer<Value, NoError>(value: transform(error))

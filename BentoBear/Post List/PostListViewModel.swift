@@ -49,7 +49,7 @@ final class PostListViewModel: BoxViewModel {
         case (let posts, .idle, .startDownloadingPosts):
             return State(posts: posts, loading: .loading)
 
-        // We have signaled to start downloading, no matter if we have posts or not.
+        // Update button tapped in the UI: signal to start downloading.
         case (let posts, .idle, .ui(.updateTapped)):
             return State(posts: posts, loading: .loading)
 

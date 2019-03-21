@@ -29,6 +29,7 @@ protocol PostStore {
     func saveOnDevice(comments: [Comment], overwrite: Bool) -> SignalProducer<Void, PostStoreError>
 }
 
+/// Persistence to UserDefaults and in-memory cache.
 final class PostStoreDefaults: PostStore {
     private static let postKey = "PostStoreDefaults.Posts"
     private static let userKey = "PostStoreDefaults.Posts"

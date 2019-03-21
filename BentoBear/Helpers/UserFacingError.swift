@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Supposed to be surfaced to the UI. Regular errors: ¡No pasarán!!
 struct UserFacingError: Error, Equatable {
     let title: String
     let message: String

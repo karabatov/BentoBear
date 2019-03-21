@@ -6,6 +6,8 @@
 //  Copyright © 2019 Yuri Karabatov. All rights reserved.
 //
 
+// Thanks Rui! https://gist.github.com/RuiAAPeres/2b8d195b8e2b43d374686c77722492dd
+
 import UIKit
 
 extension UIViewController {
