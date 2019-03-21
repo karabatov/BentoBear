@@ -137,14 +137,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		D1AF93F622429506007D0799 /* PostDetail */ = {
+		D1AF93F622429506007D0799 /* Post Detail */ = {
 			isa = PBXGroup;
 			children = (
 				D1AF93F72242952C007D0799 /* PostDetailBuilder.swift */,
 				D1AF93F92242A816007D0799 /* PostDetailViewModel.swift */,
 				D1AF93FB2242A9AE007D0799 /* PostDetailRenderer.swift */,
 			);
-			path = PostDetail;
+			path = "Post Detail";
 			sourceTree = "<group>";
 		};
 		D1AF94052242E1B0007D0799 /* BentoBearTests */ = {
@@ -207,7 +207,7 @@
 				D1130BF322415AD400C7BC63 /* Helpers */,
 				D1E0ABE4223FF72300AC5A93 /* Model */,
 				D1E0ABE1223FF07C00AC5A93 /* Post List */,
-				D1AF93F622429506007D0799 /* PostDetail */,
+				D1AF93F622429506007D0799 /* Post Detail */,
 				D1FF79CD2238009000DEF677 /* Assets.xcassets */,
 				D1FF79CF2238009000DEF677 /* LaunchScreen.storyboard */,
 				D1FF79D22238009000DEF677 /* Info.plist */,
